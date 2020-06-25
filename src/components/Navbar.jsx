@@ -14,32 +14,32 @@ import { Link } from "react-router-dom"; // Enables routing from page to page
    
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-dark">
-        <a className="navbar-brand text-white text-uppercase ml-5" href="#">Green Thumb Guys<img src ={logo} alt ="logo" style = {{width: "50px"}}/></a>
+        <Link className="navbar-brand text-white text-uppercase ml-5" to="/">Green Thumb Guys<img src ={logo} alt ="logo" style = {{width: "50px"}}/></Link>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarText">
           <ul className="navbar-nav ml-auto">
-          <Link to ="/">
+          
             <li className="nav-item active">
-              <a className="nav-link text-white text-uppercase mx-5" ><i class="fas fa-home"></i>&nbsp;Home <span class="sr-only">(current)</span></a>
+              <Link className="nav-link text-white text-uppercase mx-5" to="/" ><i class="fas fa-home"></i>&nbsp;Home <span class="sr-only">(current)</span></Link>
             </li>
-            </Link>
-            <Link to ="/about">
+            
+           
             <li className="nav-item">
-              <a className="nav-link text-white text-uppercase mx-5" ><i class="fas fa-info-circle"></i>&nbsp;About Us</a>
+              <Link className="nav-link text-white text-uppercase mx-5" to="/about"><i class="fas fa-info-circle"></i>&nbsp;About Us</Link>
             </li>
-            </Link>
-            <Link to ="/services">
+            
+           
             <li className="nav-item">
-              <a className="nav-link text-white text-uppercase mx-5" ><i class="fas fa-tasks"></i>&nbsp;Services</a>
+              <Link className="nav-link text-white text-uppercase mx-5" to="/services"><i class="fas fa-tasks"></i>&nbsp;Services</Link>
             </li>
-            </Link>
-            <Link to ="/login">
+            
+            
             <li className="nav-item">
-              <a className="nav-link text-white text-uppercase mx-5" ><i class="fas fa-user-plus"></i>&nbsp;Join / Login</a>
+              <Link className="nav-link text-white text-uppercase mx-5" to="/login"><i class="fas fa-user-plus"></i>&nbsp;Join / Login</Link>
             </li>
-            </Link>
+            
           </ul>
           
         </div>

@@ -10,7 +10,7 @@ class Login extends Component {
 
     render(){
     return (
-        <div className= "container">
+        <div className= "login-section">
             <h1>Sign up or Log In Here !</h1>
             
         </div>

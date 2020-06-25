@@ -9,7 +9,7 @@ class Services extends Component {
 
     render(){
     return (
-        <div className= "container">
+        <div className= "services-section" id="services">
             <h1>Service Packages We Offer</h1>
             <h3>Choose from one of our plans below:</h3>
             
