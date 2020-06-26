@@ -14,7 +14,7 @@ import { Link } from "react-router-dom"; // Enables routing from page to page
    
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-dark">
-        <Link className="navbar-brand text-white text-uppercase ml-5" to="/">Green Thumb Guys<img src ={logo} alt ="logo" style = {{width: "50px"}}/></Link>
+        <Link className="navbar-brand text-white text-uppercase ml-5" id="nav-banner" to="/">Green Thumb Guys<img src ={logo} alt ="logo" style = {{width: "50px"}}/></Link>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>

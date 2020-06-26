@@ -10,9 +10,11 @@ class Home extends Component {
     render(){
     return (
         <div className= "home-section" id="home">
+            <div className= "home-welcome">
             <h1>Green Thumb Guys</h1>
+           
             <h3>For your Residential and Commercial landscaping needs</h3>
-            
+            </div>
         </div>
     );
     };
