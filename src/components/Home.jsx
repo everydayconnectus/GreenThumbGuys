@@ -1,4 +1,5 @@
 import React, {Component} from 'react'; // Allows for use of components
+import {Link} from "react-router-dom";
 
 
 
@@ -13,7 +14,10 @@ class Home extends Component {
             <div className= "home-welcome">
             <h1>Green Thumb Guys</h1>
            
-            <h3>For your Residential and Commercial landscaping needs</h3>
+            <h3>We Provide the Professional Touch for your Residential &amp; Commercial landscaping needs</h3>
+
+            <Link className="home-button" to="/about"><button>Explore Our Company</button></Link>
+            <Link className="home-button" to="/login"><button>Become A Client!</button></Link>
             </div>
         </div>
     );

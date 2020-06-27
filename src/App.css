@@ -22,8 +22,12 @@ font-size: 62.5%;
 }
 
 .home-section h1{
-  font-size: 5rem;
+  font-size: 6rem;
+  
 }
+.home-section h3{
+  font-size: 3rem;
+ }
 
 .home-section{
   min-height: 92vh;
@@ -40,14 +44,28 @@ font-size: 62.5%;
 
 
 .home-welcome{
+  position: relative;
  
   margin-left: 5%;
-  
+  top: 22rem;
   padding-top: 2rem;
+  /* background-color: rgba(29, 179, 146, 0.1); */
+  text-transform: uppercase;
+  width: 42%;
   
-  width: 35%;
+  mix-blend-mode: screen; 
 }
 
+.home-button{
+  
+  /* padding: 2rem 6rem; */
+    background: green;
+    border: none;
+    
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: background 0.5s ease-in-out;
+}
 
 .about-section{
   height: 100vh;
