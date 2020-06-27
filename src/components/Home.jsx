@@ -14,10 +14,12 @@ class Home extends Component {
             <div className= "home-welcome">
             <h1>Green Thumb Guys</h1>
            
-            <h3>We Provide the Professional Touch for your Residential &amp; Commercial landscaping needs</h3>
+            <p className="display-4">We Provide the Professional Touch for your Residential &amp; Commercial landscaping needs.</p>
 
-            <Link className="home-button" to="/about"><button>Explore Our Company</button></Link>
-            <Link className="home-button" to="/login"><button>Become A Client!</button></Link>
+            <Link id="btnCompany" className="btn btn-primary" to="/about"><button>Explore Our Company</button></Link>
+
+            <Link id="btnClient" className="btn btn-primary" to="/login"><button>Become A Client!</button></Link>
+
             </div>
         </div>
     );
