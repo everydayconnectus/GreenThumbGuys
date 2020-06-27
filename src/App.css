@@ -11,6 +11,10 @@ button {
   color: #ffffff;
 }
 
+#mobileThumb{
+  display: none;
+}
+
 .btn-warning {
   color: #ffffff !important;
 }
@@ -69,45 +73,35 @@ html {
 
 #btnCompany {
   /* padding: 2rem 6rem; */
-  transition: background 0.5s ease-in-out;
-  background: #007bff;
-  color: #ffffff;
-  font-size: 1.8rem;
-  cursor: pointer;
-  border: none;
-  margin: 0.8rem;
+  margin-right: 1rem;
+  font-size: 1.5rem;
 }
 
 #btnCompany:hover {
   /* padding: 2rem 6rem; */
-  background: #4fc8ee;
+  /* background: #4fc8ee;
   color: #ffffff;
   font-size: 1.8rem;
   cursor: pointer;
   border: none;
-  margin: 0.8rem;
+  margin: 0.8rem; */
 }
 
 /* (BTN) Become A Client! */
 
 #btnClient {
-  /* padding: 2rem 6rem; */
-  transition: background 0.5s ease-in-out;
-  background: #ff6f07;
-  color: #ffffff;
-  font-size: 1.8rem;
-  cursor: pointer;
-  border: none;
+  /* margin-right: 1rem; */
+  font-size: 1.5rem;
 }
 
 #btnClient:hover {
   /* padding: 2rem 6rem; */
-  transition: background 0.5s ease-in-out;
+  /* transition: background 0.5s ease-in-out;
   background: #c68251;
   color: #ffffff;
   font-size: 1.8rem;
   cursor: pointer;
-  border: none;
+  border: none; */
 }
 
 .about-section {
@@ -130,6 +124,18 @@ html {
 @media (max-width:400px) {
   /* smartphones, iPhone, portrait 480x320 phones */
   /* Navbar Style: */
+
+  .home-section{
+    filter: grayscale(35%);
+  }
+
+  #desktopThumb{
+    display:none;
+  }
+
+  #mobileThumb{
+    display: block;
+  }
   #nav-banner {
     font-size: 150%;
   }
@@ -138,9 +144,16 @@ html {
   }
   /* Welcome Body Style: */
   .home-welcome, #ThumbTitle {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 50%;
     position: relative;
     text-transform: uppercase;
-    padding-top: 2rem;
+    padding-top: 7.5rem;
     margin-left: 5%;
     font-size: 150%;
     width: 85%;
@@ -151,21 +164,51 @@ html {
     font-size: 2.2rem;
     text-align: center;
   }
+  .buttonDiv{
+    
+      
+       /* Do Flex */
+       display: flex;
+       /* Align Items Center */
+       align-items: center;
+       /* Align Content Center */
+       justify-content: center;
+
+       margin: auto;
+   
+  }
   #btnCompany {
-    /* padding: 2rem 6rem; */
-    background: #007bff;
-    color: #ffffff;
-    font-size: 1.4rem;
-    cursor: pointer;
-    border: none;
+  	width:255px;
+    height:55px;
+   
+    line-height:1.1em;
+    color: #fff;
+	
+	font-weight:bold;
+	/* font-size: 1.1em; */
+	
+    /* min-width:120px; */
+    display: flex;
+   align-items: center; 
+   justify-content: center;
+   text-align:center;
+
   }
   #btnClient {
-    /* padding: 2rem 6rem; */
-    background: #ff6f07;
-    color: #ffffff !important;
-    font-size: 1.4rem;
-    cursor: pointer;
-    border: none;
+    margin-top: 1rem;
+    width:255px;
+    height:55px;
+    text-align:center;
+    line-height:1.1em;
+    color: #fff;
+	
+	font-weight:bold;
+	font-size: 1.1em;
+	
+    min-width:120px;
+    
+
+    
   }
 }
 

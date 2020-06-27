@@ -14,11 +14,17 @@ class Home extends Component {
                     <h1 id="ThumbTitle">Green Thumb Guys</h1>
 
                     <p id="ThumbContext" className="display-4">We Provide the Professional Touch for your Residential &amp; Commercial landscaping needs.</p>
-
-                    <ButtonGroup vertical>
-                        <Link to="/about"><Button color="primary">Explore Our Company</Button></Link>
-                        <Link to="/login"><Button color="warning" to="/login">Become A Client!</Button></Link>
+                    <div className = "buttonDiv">
+                    <ButtonGroup id= "desktopThumb">
+                        <Link to="/about"><Button color="primary" className="display-1" id="btnCompany">Explore Our Company</Button></Link>
+                        <Link to="/login"><Button  color ="warning" id="btnClient">Become A Client!</Button></Link>
                     </ButtonGroup>
+                    
+                    <ButtonGroup vertical id="mobileThumb">
+                        <Link to="/about"><Button color="primary" id="btnCompany">Explore Our Company</Button></Link>
+                        <Link to="/login"><Button  color ="warning" id="btnClient">Become A Client!</Button></Link>
+                    </ButtonGroup>
+                    </div>
                 </div>
             </div>
         );
