@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html{
+  /* Conversion that makes each rem = to 10px */
+font-size: 62.5%;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.navbar{
+  height:8vh;
+  position: fixed;
+  top: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#nav-banner, .nav-item{
+  font-size: 2rem;
+}
+
+.home-section h1{
+  font-size: 6rem;
+  
+}
+.home-section h3{
+  font-size: 3rem;
+ }
+
+.home-section{
+  min-height: 92vh;
   color: white;
+  font-weight: 400;
+  
+  background: linear-gradient(rgb(37, 35, 35, 0.3),transparent),url("https://cdn.hipwallpaper.com/i/12/66/617eiI.jpg");
+  
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.App-link {
-  color: #61dafb;
+
+.home-welcome{
+  position: relative;
+ 
+  margin-left: 5%;
+  top: 22rem;
+  padding-top: 2rem;
+  /* background-color: rgba(29, 179, 146, 0.1); */
+  text-transform: uppercase;
+  width: 42%;
+  
+  mix-blend-mode: screen; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home-button{
+  
+  /* padding: 2rem 6rem; */
+    background: green;
+    border: none;
+    
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: background 0.5s ease-in-out;
+}
+
+.about-section{
+  height: 100vh;
+  background-color: brown;
+}
+
+.services-section{
+  height: 100vh;
+  background-color: yellow;
+}
+
+
+.login-section{
+  height: 100vh;
+  background-color: purple;
 }
