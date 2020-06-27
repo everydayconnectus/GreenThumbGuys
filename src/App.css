@@ -1,84 +1,119 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html{
-  /* Conversion that makes each rem = to 10px */
-font-size: 62.5%;
-
+button {
+  background: none;
+  border: none;
+  color: #ffffff;
 }
 
+html {
+  /* Conversion that makes each rem = to 10px */
+  font-size: 62.5%;
+}
 
-.navbar{
-  height:8vh;
+.navbar {
+  height: 8vh;
   position: fixed;
   top: 0;
 }
 
-#nav-banner, .nav-item{
+#nav-banner {
+  font-size: 3rem;
+}
+
+.nav-item {
   font-size: 2rem;
 }
 
-.home-section h1{
+.home-section h1 {
   font-size: 6rem;
-  
 }
-.home-section h3{
-  font-size: 3rem;
- }
 
-.home-section{
+.home-section h3 {
+  font-size: 3rem;
+}
+
+.home-section {
   min-height: 92vh;
   color: white;
   font-weight: 400;
-  
-  background: linear-gradient(rgb(37, 35, 35, 0.3),transparent),url("https://cdn.hipwallpaper.com/i/12/66/617eiI.jpg");
-  
-  
+  background: linear-gradient(rgb(37, 35, 35, 0.3), transparent), url("https://cdn.hipwallpaper.com/i/12/66/617eiI.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-
-.home-welcome{
+.home-welcome {
   position: relative;
- 
   margin-left: 5%;
   top: 22rem;
   padding-top: 2rem;
   /* background-color: rgba(29, 179, 146, 0.1); */
   text-transform: uppercase;
   width: 42%;
-  
-  mix-blend-mode: screen; 
+  mix-blend-mode: screen;
 }
 
-.home-button{
-  
+/* (BTN) Explore Our Community */
+
+#btnCompany {
   /* padding: 2rem 6rem; */
-    background: green;
-    border: none;
-    
-    font-size: 1.8rem;
-    cursor: pointer;
-    transition: background 0.5s ease-in-out;
+  transition: background 0.5s ease-in-out;
+  background: #007bff;
+  color: #ffffff;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border: none;
+  margin: 0.8rem;
 }
 
-.about-section{
+#btnCompany:hover {
+  /* padding: 2rem 6rem; */
+  background: #4fc8ee;
+  color: #ffffff;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border: none;
+  margin: 0.8rem;
+}
+
+/* (BTN) Become A Client! */
+
+#btnClient {
+  /* padding: 2rem 6rem; */
+  transition: background 0.5s ease-in-out;
+  background: #ff6f07;
+  color: #ffffff;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border: none;
+}
+
+#btnClient:hover {
+  /* padding: 2rem 6rem; */
+  transition: background 0.5s ease-in-out;
+  background: #c68251;
+  color: #ffffff;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border: none;
+}
+
+.about-section {
   height: 100vh;
   background-color: brown;
 }
 
-.services-section{
+.services-section {
   height: 100vh;
   background-color: yellow;
 }
 
-
-.login-section{
+.login-section {
   height: 100vh;
   background-color: purple;
 }
