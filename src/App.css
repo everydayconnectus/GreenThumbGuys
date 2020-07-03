@@ -202,6 +202,13 @@ html {
     width: 200%;
     /* height: 145rem; */
   }
+
+  .home-section{
+    max-height: 55vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  
+  }
   .carousel-caption {
     position: absolute;
     left: 2.5% !important;
