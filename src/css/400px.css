@@ -1,0 +1,90 @@
+@media (max-width:400px) {
+    /* smartphones, iPhone, portrait 480x320 phones */
+    .navbar {
+        display: flex;
+    }
+    .nav-item {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .nav-item:hover {
+        background-color: #696969;
+    }
+    nav.navbar.navbar-expand-lg.navbar-light.bg-dark {
+        padding: 0;
+        display: table-footer-group;
+    }
+    .navbar-light .navbar-toggler, .navbar-toggler-icon {
+        background-color: #0ed145;
+        border-radius: 0px;
+        color: #ffffff;
+        width: 100%;
+    }
+    #nav-banner {
+        width: 100%;
+        /* position: fixed; */
+    }
+    .carousel-caption {
+        position: relative;
+        top: 15rem;
+        right: 2rem;
+        width: 75%;
+        color: #fff;
+    }
+    #ThumbTitle {
+        font-size: 2.1rem;
+        margin-bottom: 1rem;
+    }
+    #ThumbContext {
+        font-size: 2rem;
+    }
+    #btnCompany, #btnClient {
+        font-size: 1.8rem;
+    }
+    .home-section {
+        position: fixed;
+        background-repeat: no-repeat;
+        display: flex;
+        width: 100%;
+    }
+    #home {
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    .carousel-item {
+        filter: brightness(40%);
+    }
+    #card {
+        width: 100%;
+    }
+    .services-section {
+        overflow-y: visible !important;
+        overflow-x: visible !important;
+    }
+    .service-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+    #OurServices {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    .service-info {
+        text-align: center;
+    }
+    .service-info h2 {
+        font-size: 1.3rem;
+    }
+    .Slides {
+        background: url("/images/backgrounds/lawn.jpg") no-repeat center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        /* overflow: hidden; */
+        height: 100vh !important;
+        width: 100vw !important;
+    }
+}

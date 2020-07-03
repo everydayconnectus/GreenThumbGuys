@@ -143,101 +143,20 @@ html {
   background-color: rgba(238, 228, 228, 0.7);
 }
 
-/* Media Queries */
+/* Home Carousel Stock Slide Images */
 
-@media (max-width:400px) {
-  /* smartphones, iPhone, portrait 480x320 phones */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  .navbar {
-    display: flex;
-  }
-  .nav-item {
-    font-size: 2rem;
-    text-align: center;
-  }
-  .nav-item:hover {
-    background-color: #696969;
-  }
-  nav.navbar.navbar-expand-lg.navbar-light.bg-dark {
-    padding: 0;
-    display: table-footer-group;
-  }
-  .navbar-light .navbar-toggler, .navbar-toggler-icon {
-    background-color: #0ed145;
-    border-radius: 0px;
-    color: #ffffff;
-    width: 100%;
-  }
-  #nav-banner {
-    margin-left: 10% !important;
-    width: 120%;
-  }
-  .carousel-caption, #ThumbTitle {
-    position: relative;
-    top: 10px;
-    color: #ffffff;
-    /* width: 75%; */
-    margin-bottom: 2rem;
-  }
-  #ThumbTitle {
-    font-size: 2.5rem;
-  }
-  #ThumbContext {
-    font-size: 2.2rem;
-  }
-  #btnCompany, #btnClient {
-    font-size: 1.5rem;
-  }
-  #home {
-    display: flex;
-    /* background-image: url(/images/backgrounds/lawn.jpg); */
-    background-color: #17538f;
-    background-repeat: no-repeat;
-    /* width: 50%; */
-    position: relative;
-    width: 200%;
-    /* height: 145rem; */
-  }
-
-  .home-section{
-    max-height: 55vh;
-    overflow-y: hidden;
-    overflow-x: hidden;
-  
-  }
-  .carousel-caption {
-    position: absolute;
-    left: 2.5% !important;
-    z-index: 10;
-    color: #fff;
-  }
-  .carousel-item {
-    filter: brightness(40%);
-  }
-  #card {
-    width: 100%;
-  }
-  .service-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-  }
-  #OurServices {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-  }
-  .service-info {
-    text-align: center;
-  }
-  .service-info h2 {
-    font-size: 1.3rem;
-  }
+.Slides {
+  background: url("/images/backgrounds/lawn.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* overflow: hidden; */
+  height: 100vh !important;
+  width: 100vw !important;
 }
+
+/* Media Queries */
 
 @media (min-width:481px) {
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
