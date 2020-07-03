@@ -11,7 +11,7 @@ button {
   color: #ffffff;
 }
 
-#mobileThumb{
+#mobileThumb {
   display: none;
 }
 
@@ -32,10 +32,6 @@ html {
   top: 0;
 }
 
-#nav-banner {
-  font-size: 3rem;
-}
-
 .nav-item {
   font-size: 2rem;
 }
@@ -48,60 +44,50 @@ html {
   font-size: 3rem;
 }
 
-.home-section {
-  min-height: 92vh;
-  color: white;
-  font-weight: 400;
-  background: linear-gradient(rgb(37, 35, 35, 0.3), transparent), url("https://cdn.hipwallpaper.com/i/12/66/617eiI.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.home-welcome {
+.home-welcome, #ThumbTitle {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  width: 50%;
   position: relative;
-  margin-left: 5%;
-  top: 22rem;
-  padding-top: 2rem;
-  /* background-color: rgba(29, 179, 146, 0.1); */
-  text-transform: uppercase;
-  width: 42%;
-  /* mix-blend-mode: screen; */
+  font-size: 10rem;
+  width: 100%;
 }
 
-/* (BTN) Explore Our Community */
+.carousel-item {
+  filter: brightness(60%);
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 25rem;
+  left: 10rem;
+  width: 46%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  height: 1193px;
+  overflow: hidden;
+}
 
 #btnCompany {
   /* padding: 2rem 6rem; */
-  margin-right: 1rem;
-  font-size: 1.5rem;
+  margin-right: 4rem;
+  font-size: 4.5rem;
 }
-
-#btnCompany:hover {
-  /* padding: 2rem 6rem; */
-  /* background: #4fc8ee;
-  color: #ffffff;
-  font-size: 1.8rem;
-  cursor: pointer;
-  border: none;
-  margin: 0.8rem; */
-}
-
-/* (BTN) Become A Client! */
 
 #btnClient {
   /* margin-right: 1rem; */
-  font-size: 1.5rem;
-}
-
-#btnClient:hover {
-  /* padding: 2rem 6rem; */
-  /* transition: background 0.5s ease-in-out;
-  background: #c68251;
-  color: #ffffff;
-  font-size: 1.8rem;
-  cursor: pointer;
-  border: none; */
+  font-size: 4.5rem;
 }
 
 .about-section {
@@ -123,92 +109,69 @@ html {
 
 @media (max-width:400px) {
   /* smartphones, iPhone, portrait 480x320 phones */
-  /* Navbar Style: */
-
-  .home-section{
-    filter: grayscale(35%);
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
-
-  #desktopThumb{
-    display:none;
+  .navbar {
+    display: flex;
   }
-
-  #mobileThumb{
-    display: block;
+  .nav-item {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .nav-item:hover {
+    background-color: #696969;
+  }
+  nav.navbar.navbar-expand-lg.navbar-light.bg-dark {
+    padding: 0;
+    display: table-footer-group;
+  }
+  .navbar-light .navbar-toggler, .navbar-toggler-icon {
+    background-color: #0ed145;
+    border-radius: 0px;
+    color: #ffffff;
+    width: 100%;
   }
   #nav-banner {
-    font-size: 150%;
+    margin-left: 10% !important;
+    width: 120%;
   }
-  #GreenGuy {
-    width: 4rem !important;
-  }
-  /* Welcome Body Style: */
-  .home-welcome, #ThumbTitle {
-    display: flex;
-    align-content: center;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
-    width: 50%;
+  .carousel-caption, #ThumbTitle {
     position: relative;
-    text-transform: uppercase;
-    padding-top: 7.5rem;
-    margin-left: 5%;
-    font-size: 150%;
-    width: 85%;
-    top: 0rem;
-    /* mix-blend-mode: screen; */
+    top: 10px;
+    color: #ffffff;
+    /* width: 75%; */
+    margin-bottom: 2rem;
+  }
+  #ThumbTitle {
+    font-size: 2.5rem;
   }
   #ThumbContext {
     font-size: 2.2rem;
-    text-align: center;
   }
-  .buttonDiv{
-    
-      
-       /* Do Flex */
-       display: flex;
-       /* Align Items Center */
-       align-items: center;
-       /* Align Content Center */
-       justify-content: center;
-
-       margin: auto;
-   
+  #btnCompany, #btnClient {
+    font-size: 1.5rem;
   }
-  #btnCompany {
-  	width:255px;
-    height:55px;
-   
-    line-height:1.1em;
-    color: #fff;
-	
-	font-weight:bold;
-	/* font-size: 1.1em; */
-	
-    /* min-width:120px; */
+  #home {
     display: flex;
-   align-items: center; 
-   justify-content: center;
-   text-align:center;
-
+    /* background-image: url(/images/backgrounds/lawn.jpg); */
+    background-color: #17538f;
+    background-repeat: no-repeat;
+    /* width: 50%; */
+    position: relative;
+    width: 200%;
+    /* height: 145rem; */
   }
-  #btnClient {
-    margin-top: 1rem;
-    width:255px;
-    height:55px;
-    text-align:center;
-    line-height:1.1em;
+  .carousel-caption {
+    position: absolute;
+    left: 2.5% !important;
+    z-index: 10;
     color: #fff;
-	
-	font-weight:bold;
-	font-size: 1.1em;
-	
-    min-width:120px;
-    
-
-    
+  }
+  .carousel-item {
+    filter: brightness(40%);
   }
 }
 
