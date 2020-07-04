@@ -20,12 +20,12 @@ class Home extends Component {
                     <div className="ServiceLinks">
                         {/* Desktop Service Links  */}
                         <ButtonGroup id="desktopThumb">
-                            <Link to="/about"><Button color="primary" className="display-1" id="btnCompany">View Our Services</Button></Link>
+                            <Link to="/services"><Button color="primary" className="display-1" id="btnCompany">View Our Services</Button></Link>
                             <Link to="/login"><Button color="success" id="btnClient">Become A Client</Button></Link>
                         </ButtonGroup>
                         {/* Mobile Service Links */}
                         <ButtonGroup vertical id="mobileThumb">
-                            <Link to="/about"><Button color="primary" className="display-1" id="btnCompany">View Our Services</Button></Link>
+                            <Link to="/services"><Button color="primary" className="display-1" id="btnCompany">View Our Services</Button></Link>
                             <Link to="/login"><Button color="success" id="btnClient">Become A Client</Button></Link>
                         </ButtonGroup>
                     </div>

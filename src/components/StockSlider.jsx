@@ -1,12 +1,14 @@
+// Dependencies.
 import React, { useState } from 'react';
+
+// Reactstrap Carousel Imports.
 import {
     Carousel,
     CarouselItem,
-    CarouselControl,
-    CarouselIndicators,
     CarouselCaption
 } from 'reactstrap';
 
+// Array of images.
 const items = [
     {
         src: '/images/backgrounds/lawn.jpg',
@@ -19,52 +21,54 @@ const items = [
     }
 ];
 
-const StockSlider = (props) => {
-    const [activeIndex, setActiveIndex] = useState(0);
-    const [animating, setAnimating] = useState(false);
+// Iterate through each image with a fading animation and display it as a background.
+const StockSlider = () => {
+    // During the array iteration, use the image at the start of the array.
+    const [activeIndex, setActiveIndex] = useState(2); // Index Controller.
+    const [animating, setAnimating] = useState(false); // Anim State.
 
+    // Next Slide.
     const next = () => {
         if (animating) return;
         const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
         setActiveIndex(nextIndex);
     }
 
+    // Previous Slide.
     const previous = () => {
         if (animating) return;
         const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
         setActiveIndex(nextIndex);
     }
 
-    const goToIndex = (newIndex) => {
-        if (animating) return;
-        setActiveIndex(newIndex);
-    }
-
+    // Compile Slide Image, Animation, and CSS states.
     const slides = items.map((item) => {
         return (
+            // Define State of Carousel.
             <CarouselItem
                 onExiting={() => setAnimating(true)}
                 onExited={() => setAnimating(false)}
                 key={item.src}
             >
+                {/* Populate Slide Images */}
                 <img class="Slides" src={item.src} alt={item.altText} />
                 <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
             </CarouselItem>
         );
     });
 
+    // Execute and populate slides.
     return (
         <Carousel
             activeIndex={activeIndex}
             next={next}
             previous={previous}
         >
-            <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
             {slides}
-            <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
-            <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
+
         </Carousel>
     );
 }
 
+// Do Export.
 export default StockSlider;
