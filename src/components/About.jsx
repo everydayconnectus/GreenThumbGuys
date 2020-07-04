@@ -10,16 +10,21 @@ class About extends Component {
     render() {
         return (
             <div className="about-section" id="about">
-                <h1 class="display-4" id ="aboutTitle">About Us</h1>
+                <h1 class="display-4" id="aboutTitle">About Us</h1>
                 {/* Jumbo 'About Us' */}
                 <div class="jumbotron jumbotron-fluid">
-                    <div class="container jumbo">
-                        {/* Jumbo 'About Us' content */}
-                        
-                        
-                    </div>
+                    <div class="container jumbo"></div>
                 </div>
-              <p><h1>Hello  World</h1></p>
+                <div className="container-fluid text-center" id="AboutContent">
+                    <h1>
+                        <h2 className="text-success" id="AboutBrand">
+                            Excepteur commodo cupidatat
+                        </h2>
+                        <p id="AboutContext" className="text-primary lead">
+                            Sunt veniam amet magna commodo. Aliquip excepteur cillum esse exercitation in nulla ut. Tempor Lorem quis ex amet deserunt enim duis minim sunt minim. Ut esse eu id magna id nisi exercitation fugiat qui esse ullamco. Commodo mollit ipsum id deserunt in ex fugiat quis proident.  Sunt veniam amet magna commodo. Aliquip excepteur cillum esse exercitation in nulla ut. Tempor Lorem quis ex amet deserunt enim duis minim sunt minim. Ut esse eu id magna id nisi exercitation fugiat qui esse ullamco. Commodo mollit ipsum id deserunt in ex fugiat quis proident. 
+                        </p>
+                    </h1>
+                </div>
             </div>
         );
     };
