@@ -79,15 +79,11 @@ html {
   overflow: hidden;
 }
 
-#btnCompany {
-  /* padding: 2rem 6rem; */
+#btnCompany, #btnClient {
+  padding: 0 2rem 0rem 2rem;
   margin-right: 4rem;
   font-size: 4.5rem;
-}
-
-#btnClient {
-  /* margin-right: 1rem; */
-  font-size: 4.5rem;
+  border-radius: 10px;
 }
 
 .about-section {
