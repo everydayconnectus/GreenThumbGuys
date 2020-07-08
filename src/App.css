@@ -193,17 +193,11 @@ html {
 
 
 
-.services-section {
-  height: 100vh;
-  background-color: yellow;
-}
-
-
 
 .services-section {
   margin: auto;
-  height: 100%;
-  background: linear-gradient(0, rgba(238, 228, 228, 0.7), rgba(238, 228, 228, 0.7)), url("https://images.unsplash.com/photo-1586280268958-9483002d016a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1281&q=80");
+  height: 92vh;
+  background: linear-gradient( rgba(238, 228, 228, 0.7), rgba(238, 228, 228, 0.7)), url("https://images.unsplash.com/photo-1586280268958-9483002d016a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1281&q=80");
   background-position: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -220,6 +214,10 @@ html {
 
 .service-info h1 {
   font-size: 4rem;
+}
+
+.card-info li{
+  font-size: 1.5rem;
 }
 
 .service-cards {
