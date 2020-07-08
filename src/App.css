@@ -1,6 +1,5 @@
 /* ------------------------------ G L O B A L _ _ S T Y L I N G _ _----------------------------------------------- */
 
-
 * {
   margin: 0;
   padding: 0;
@@ -29,9 +28,6 @@ html {
 
 /* ******************************************************************************************************************************* */
 
-
-
-
 /* -----------------------------------------N A V B A R _ _ S E C T I O N _ _ S T Y L E S _ _ ----------------------------------- --- */
 
 .navbar {
@@ -44,16 +40,9 @@ html {
   font-size: 2rem;
 }
 
-
-
 /* ******************************************************************************************************************************* */
 
-
-
 /* -----------------------------------------H O M E _ _ S E C T I O N _ _ S T Y L E S _ _ ----------------------------------- --- */
-
-
-
 
 .home-section h1 {
   font-size: 6rem;
@@ -98,6 +87,12 @@ html {
   overflow: hidden;
 }
 
+#btnCompany, #btnClient {
+  padding: 0 2rem 0rem 2rem;
+  margin-right: 4rem;
+  font-size: 4.5rem;
+  border-radius: 10px;
+}
 
 /* Home Carousel Stock Slide Images */
 
@@ -112,35 +107,20 @@ html {
   width: 100vw !important;
 }
 
-#btnCompany, #btnClient {
-  padding: 0 2rem 0rem 2rem;
-  margin-right: 4rem;
-  font-size: 4.5rem;
-  border-radius: 10px;
-}
-
 /* ********************************************************************************************************************************* */
-
-
-
 
 /* -------------------------------------------A B O U T _ _ S E C T I O N _ _ S T Y L E S _ _ --------------------------------------- */
 
-
-
-
 .about-section {
-  height: 100vh;
-  /* background-color: rgba(12, 174, 214, 0.7); */
+  height: 125vh;
   background-color: #ffffff;
-  background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
+  background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png");
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 .jumbotron {
   background: url("/images/backgrounds/jumbostock.png");
+  clip-path: polygon(100% 0, 100% 100%, 53% 100%, 50% 91%, 47% 100%, 0 100%, 0 0);
   /* background: url("https://images.unsplash.com/photo-1472133530746-ae9b21e91c41?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"); */
   background-repeat: no-repeat;
   background-size: cover;
@@ -156,13 +136,16 @@ html {
 .jumbo {
   transform: scaleX(-1);
 }
+
 #AboutContent {
-  margin-top: 5%;
+  margin-top: 2%;
 }
+
 #AboutBrand {
-  font-size: 5rem;
+  font-size: 8rem;
   font-weight: bold;
 }
+
 #AboutContext {
   font-size: 3rem;
   margin: auto;
@@ -170,34 +153,41 @@ html {
 }
 
 #aboutTitle {
-  font-size: 15rem;
-  position: fixed;
+  font-size: 20rem;
+  position: absolute;
   display: flex;
   align-items: center;
   flex-direction: column;
   z-index: 999;
   color: white;
-  left: 38vw;
-  top: 20vh;
+  left: 34vw;
+  top: 18vh;
   font-weight: bold;
 }
 
-
 /* ***************************************************************************************************************************************** */
-
-
-
-
 
 /* --------------------------------S E R V I C E S _ _ S E C T I O N _ _ S T Y L E S ------------------------------------------------------- */
 
+.services-section {
+  height: 200vh;
+  background-color: yellow;
+}
 
+.ServiceCards {
+  position: absolute;
+  right: 50vh;
+}
 
+.login-section {
+  height: 100vh;
+  background-color: purple;
+}
 
 .services-section {
   margin: auto;
-  height: 92vh;
-  background: linear-gradient( rgba(238, 228, 228, 0.7), rgba(238, 228, 228, 0.7)), url("https://images.unsplash.com/photo-1586280268958-9483002d016a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1281&q=80");
+  height: 100%;
+  background: linear-gradient(0, rgba(238, 228, 228, 0.7), rgba(238, 228, 228, 0.7)), url("https://images.unsplash.com/photo-1586280268958-9483002d016a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1281&q=80");
   background-position: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -216,10 +206,6 @@ html {
   font-size: 4rem;
 }
 
-.card-info li{
-  font-size: 1.5rem;
-}
-
 .service-cards {
   margin: auto;
   width: 95%;
@@ -228,31 +214,29 @@ html {
 }
 
 .card-info {
-  margin: auto;
-  width: 95%;
+  font-size: 1.5rem;
+  padding: 1rem;
 }
 
-.cardtitle {
-  background-color: rgba(238, 228, 228, 0.7);
+#StandardBundle {
+  background: #00cff5;
+  color: #ffffff;
 }
 
-
-/* *************************************************************************************************************************************** */
-
-
-
-/* -------------------------------- L O G I N _ _ S E C T I O N _ _ S T Y L E S----------------------------------------------------------- */
-
-
-
-
-
-.login-section {
-  height: 100vh;
-  background-color: purple;
+#EmeraldBundle {
+  background: #66cc66;
+  color: #ffffff;
 }
 
+#PremiumBundle {
+  background: #ffa500;
+  color: #ffffff;
+}
 
+#CommercialBundle {
+  background: #f87c00;
+  color: #ffffff;
+}
 
 /* Media Queries */
 

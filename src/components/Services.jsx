@@ -1,18 +1,9 @@
-//  --------------------- I M P O R T E D _ _ D E P E N D E N C I E S _----------------------------------------------
+// Dependencies.
+import React, { Component } from 'react';
+import { Card, CardImg, CardTitle, CardText, CardDeck, CardSubtitle, CardBody, Badge } from 'reactstrap';
 
-
-
-import React, { Component } from 'react'; // Allows for use of components
-import { Card, Button, CardImg, CardTitle, CardText, CardDeck, CardSubtitle, CardBody, Badge } from 'reactstrap';
-
-
-
-// ----------------------A P P _ _ C O M P O N E N T _ _ F O R _ _ S E R V I C E S _ _ P A G E------------------------
-
-
-
+// Draw Component Class.
 class Services extends Component {
-
   render() {
     return (
       <div className="services-section" id="services">
@@ -93,14 +84,10 @@ class Services extends Component {
             </Card>
           </CardDeck>
         </div>
-
       </div>
     );
   };
 };
 
-
-
-
-
+// Export Component.
 export default Services;

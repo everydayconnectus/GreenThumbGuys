@@ -1,38 +1,26 @@
-// ------------------------------ I M P O R T E D _ _ D E P E N D E N C I E S_ -----------------------------------------------
-
-
+// Dependencies.
 import React, { useState } from 'react';
 
-// Reactstrap Carousel Imports.
-import {
-    Carousel,
-    CarouselItem,
-    CarouselCaption
-} from 'reactstrap';
-
-
-// -------------------------------------------------------------------------------------------------------------------------------
-
-
-
+// ReactStrap Definitions.
+import { Carousel, CarouselItem, } from 'reactstrap';
 
 // Array of images.
 const items = [
     {
-        src: '/images/backgrounds/lawn.jpg',
+        src: '/images/backgrounds/stockslides/stock1.jpg',
     },
     {
-        src: 'https://images.pexels.com/photos/280229/pexels-photo-280229.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+        src: '/images/backgrounds/stockslides/stock2.jpg',
     },
     {
-        src: 'https://images.pexels.com/photos/321542/pexels-photo-321542.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+        src: '/images/backgrounds/stockslides/stock3.jpg',
     }
 ];
 
 // Iterate through each image with a fading animation and display it as a background.
 const StockSlider = () => {
     // During the array iteration, use the image at the start of the array.
-    const [activeIndex, setActiveIndex] = useState(2); // Index Controller.
+    const [activeIndex, setActiveIndex] = useState(0); // Index Controller.
     const [animating, setAnimating] = useState(false); // Anim State.
 
     // Next Slide.
@@ -56,11 +44,10 @@ const StockSlider = () => {
             <CarouselItem
                 onExiting={() => setAnimating(true)}
                 onExited={() => setAnimating(false)}
-                key={item.src}
-            >
+                key={item.src}>
+
                 {/* Populate Slide Images */}
-                <img class="Slides" src={item.src} alt={item.altText} />
-                <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+                <img class="Slides" src={item.src} />
             </CarouselItem>
         );
     });
@@ -70,13 +57,12 @@ const StockSlider = () => {
         <Carousel
             activeIndex={activeIndex}
             next={next}
-            previous={previous}
-        >
-            {slides}
+            previous={previous}>
 
+            {slides}
         </Carousel>
     );
 }
 
-// Do Export.
+// Export Component.
 export default StockSlider;
