@@ -1,4 +1,6 @@
-// Dependencies.
+// ------------------------------ I M P O R T E D _ _ D E P E N D E N C I E S_ -----------------------------------------------
+
+
 import React, { useState } from 'react';
 
 // Reactstrap Carousel Imports.
@@ -7,6 +9,12 @@ import {
     CarouselItem,
     CarouselCaption
 } from 'reactstrap';
+
+
+// -------------------------------------------------------------------------------------------------------------------------------
+
+
+
 
 // Array of images.
 const items = [

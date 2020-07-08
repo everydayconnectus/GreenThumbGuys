@@ -1,9 +1,15 @@
-// Dependencies.
+
+
+// --------------------- D E P E N D E N C I E S -----------------------------------------------------
+
+
 import React, { Component } from 'react'; // allows for use of components
 // import logo from '../logo.png'; // Logo displayed next to company name on navbar
 import { Link } from "react-router-dom"; // Enables routing from page to page
 
-// A P P _ _ C O M P O N E N T _ _ F O R _ _ N A V I G A T I O N _ _ B A R
+
+
+// ------------------------A P P _ _ C O M P O N E N T _ _ F O R _ _ N A V I G A T I O N _ _ B A R -------------------------
 
 
 // Renders 'navbar.jsx'.

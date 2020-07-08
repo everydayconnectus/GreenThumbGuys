@@ -1,3 +1,6 @@
+// -------------------------- I M P O R T E D _ _ D E P E N D E N C I E S _ _ --------------------------------------------
+
+
 import React, { Component } from 'react'; // Allows for use of components
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'; // Allows for routing in react
 import './App.css'; // imports custom css styling
@@ -9,6 +12,11 @@ import Home from './components/Home';
 import About from './components/About';
 import Login from './components/Login';
 import Services from './components/Services'
+
+
+
+// ----------------------- R E N D E R E D _ _ A P P _ _ C O M P O N E N T -----------------------------------------------------
+
 
 class App extends Component {
   render() {

@@ -1,7 +1,13 @@
+//  --------------------- I M P O R T E D _ _ D E P E N D E N C I E S _----------------------------------------------
+
+
+
 import React, { Component } from 'react'; // Allows for use of components
 import { Card, Button, CardImg, CardTitle, CardText, CardDeck, CardSubtitle, CardBody, Badge } from 'reactstrap';
 
-// A P P _ _ C O M P O N E N T _ _ F O R _ _ S E R V I C E S _ _ P A G E
+
+
+// ----------------------A P P _ _ C O M P O N E N T _ _ F O R _ _ S E R V I C E S _ _ P A G E------------------------
 
 
 
