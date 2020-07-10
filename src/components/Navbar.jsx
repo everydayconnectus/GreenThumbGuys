@@ -8,12 +8,9 @@ class Navbar extends Component {
     return (
       // 'Navbar' Component Container.
       <nav className="navbar navbar-expand-lg navbar-light bg-dark">
-        
         {/* Official 'Green Thumb Guys' Logo */}
-        <Link className="navbar-brand text-white text-uppercase ml-5" id="nav-banner" to="/">
-          <h1>
-            <img className="hvr-shrink" id="GreenGuy" src="/images/logos/logo.png" alt="logo" style={{ width: "60%" }} />
-          </h1>
+        <Link className="navbar-brand" to="/">
+          <img class="hvr-shrink" height="51" width="100%" id="SiteLogo" src="/images/logos/logo.png" />
         </Link>
         {/* Site Navigation (Mobile Collapse) */}
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#SiteNavigation" aria-controls="SiteNavigation" aria-expanded="false" aria-label="Toggle Navigation">

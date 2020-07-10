@@ -30,6 +30,10 @@ html {
 
 /* -----------------------------------------N A V B A R _ _ S E C T I O N _ _ S T Y L E S _ _ ----------------------------------- --- */
 
+#ThumbContext {
+  font-size: 6rem;
+}
+
 .navbar {
   height: 8vh;
   position: fixed;
@@ -236,26 +240,4 @@ html {
 #CommercialBundle {
   background: #f87c00;
   color: #ffffff;
-}
-
-/* Media Queries */
-
-@media (min-width:481px) {
-  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
-}
-
-@media (min-width:641px) {
-  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-}
-
-@media (min-width:961px) {
-  /* tablet, landscape iPad, lo-res laptops ands desktops */
-}
-
-@media (min-width:1025px) {
-  /* big landscape tablets, laptops, and desktops */
-}
-
-@media (min-width:1281px) {
-  /* hi-res laptops and desktops */
 }

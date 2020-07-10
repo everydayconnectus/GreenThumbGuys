@@ -1,0 +1,126 @@
+/* smartphones, iPhone, portrait 480x320 phones */
+
+@media screen and (min-width: 540px) and (max-width: 640px) {
+    /* ******************************************************************************************************************************* */
+    /*      --------------------------------------- MOBILE RULES FOR THE NAVBAR --------------------------------------- */
+    /* ******************************************************************************************************************************* */
+    #SiteLogo {
+        margin-left: 10%;
+        padding: 10px;
+        height: 70px;
+        width: 80vw;
+    }
+    /* Removes nav padding and expands the logo visibility */
+    nav.navbar.navbar-expand-lg.navbar-light.bg-dark {
+        display: table-footer-group;
+        width: 100%;
+        padding: 0;
+    }
+    /* Keeps Navbar from disappearing due to being in a fixed position */
+    .navbar {
+        display: flex;
+        z-index: 999;
+        height: 80px;
+    }
+    /* Resizes Navbar Links */
+    .nav-item {
+        text-align: center;
+        font-size: 2rem;
+    }
+    /* Navbar Mobile Collapse Link Hover State */
+    .nav-item:hover {
+        background-color: #696969;
+    }
+    /* Navbar Mobile Collapse Custom Styling */
+    .navbar-light .navbar-toggler, .navbar-toggler-icon {
+        background-color: #0ed145;
+        border-radius: 0px;
+        color: #ffffff;
+        width: 100%;
+    }
+    /* Creates a nice new background for the collapse dropdown only in mobile */
+    ul.navbar-nav.ml-auto {
+        border-bottom: 0.4rem solid #0ed145;
+        background-color: #343a40;
+        width: 100%;
+    }
+    /* Keeps content aligned with everything, even when clicking the mobile dropdown hamburger */
+    nav.navbar.navbar-expand-lg.navbar-light.bg-dark {
+        position: fixed;
+    }
+    /* Keeps the navbar 100% expanded across the screen */
+    #nav-banner {
+        width: 100%;
+    }
+    /* ******************************************************************************************************************************* */
+    /*      --------------------------------------- MOBILE RULES FOR THE CAROUSEL --------------------------------------- */
+    /* ******************************************************************************************************************************* */
+    /* Carousel Center Alignment */
+    .carousel-caption {
+        position: relative;
+        color: #fff;
+        right: 2rem;
+        top: 15rem;
+        width: 75%;
+    }
+    /* Carousel Home Context "Professional Landscaping" Text */
+    #ThumbTitle {
+        margin-bottom: 1rem;
+        font-size: 3.5rem;
+    }
+    /* Size of the parent id to 'ThumbTitle' */
+    #ThumbContext {
+        font-size: 3rem;
+    }
+    /* Pushes 'View Our Services' away from 'Become a Client' */
+    #btnClient {
+        margin-left: 1rem;
+    }
+    /* Home Button Styles & Size Control */
+    #btnCompany, #btnClient {
+        padding: 0 1rem 0rem 1rem;
+        border-radius: 8px;
+        font-size: 2rem;
+        width: 100%;
+    }
+    /* Main 'Home Page' Section Definitions (VERY IMPORTANT, SITE WILL EXPLODE and CONTORT IF DELETED) */
+    .home-section {
+        background-repeat: no-repeat;
+        position: fixed;
+        display: flex;
+        width: 100%;
+    }
+    /* Adjusts the Carousel Background Brightness Intensity (So text is more visible on images that contain brighter colors) */
+    .carousel-item {
+        filter: brightness(40%);
+    }
+    /* ******************************************************************************************************************************* */
+    /*      --------------------------------------- MOBILE RULES FOR THE SERVICES --------------------------------------- */
+    /* ******************************************************************************************************************************* */
+    /* This section is left uncommented because it may be getting merged with the 'About Section'. */
+    .services-section {
+        overflow-y: visible !important;
+        overflow-x: visible !important;
+        margin-top: 5rem;
+    }
+    .service-info {
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        display: flex;
+    }
+    #OurServices {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    .service-info {
+        text-align: center;
+    }
+    .service-info h2 {
+        font-size: 1.3rem;
+    }
+    .Slides {
+        background: url("/images/backgrounds/lawn.jpg") no-repeat center;
+        background-position: center;
+    }
+}
