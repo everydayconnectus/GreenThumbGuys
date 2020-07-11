@@ -13,6 +13,7 @@
     nav.navbar.navbar-expand-lg.navbar-light.bg-dark {
         display: table-footer-group;
         width: 100%;
+        height: 6rem;
         padding: 0;
     }
     /* Keeps Navbar from disappearing due to being in a fixed position */

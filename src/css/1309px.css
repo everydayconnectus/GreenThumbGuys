@@ -50,20 +50,20 @@
     /* ******************************************************************************************************************************* */
     /* Carousel Center Alignment */
     .carousel-caption {
-        position: relative;
+        position: absolute;
+        top: 19rem;
+        margin-left: 11rem;
+        z-index: 10;
         color: #fff;
-        right: 2rem;
-        top: 15rem;
-        width: 75%;
     }
     /* Carousel Home Context "Professional Landscaping" Text */
     #ThumbTitle {
         margin-bottom: 1rem;
-        font-size: 8rem;
+        font-size: 5rem;
     }
     /* Size of the parent id to 'ThumbTitle' */
     #ThumbContext {
-        font-size: 4.8rem;
+        font-size: 3.5rem;
     }
     /* Pushes 'View Our Services' away from 'Become a Client' */
     #btnClient {
@@ -73,7 +73,7 @@
     #btnCompany, #btnClient {
         padding: 0 1rem 0rem 1rem;
         border-radius: 8px;
-        font-size: 3.5rem;
+        font-size: 2.5rem;
         width: 100%;
     }
     /* Main 'Home Page' Section Definitions (VERY IMPORTANT, SITE WILL EXPLODE and CONTORT IF DELETED) */

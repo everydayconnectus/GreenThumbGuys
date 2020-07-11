@@ -10,7 +10,7 @@ class Navbar extends Component {
       <nav className="navbar navbar-expand-lg navbar-light bg-dark">
         {/* Official 'Green Thumb Guys' Logo */}
         <Link className="navbar-brand" to="/">
-          <img class="hvr-shrink" height="51" width="100%" id="SiteLogo" src="/images/logos/logo.png" />
+          <img class="hvr-shrink" height="51" width="70%" id="SiteLogo" src="/images/logos/logo.png" />
         </Link>
         {/* Site Navigation (Mobile Collapse) */}
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#SiteNavigation" aria-controls="SiteNavigation" aria-expanded="false" aria-label="Toggle Navigation">
