@@ -21,9 +21,11 @@ import 'bootstrap/dist/js/bootstrap.min.js'; // Bootstrap JS Library.
 // All React Component Definitions.
 import Navbar from './components/Navbar';
 import Home from './components/Home';
-import About from './components/About'; // Saving route for possible 'Contact Us' page or future dashboard for client data.
-import Login from './components/Login';
 import Services from './components/Services';
+import Login from './components/Login';
+
+// Possible Dashboard Page Route (Placeholder For New Content to Come).
+import Dashboard from './components/Dashboard';
 
 // Draw Component Class.
 class App extends Component {
@@ -34,9 +36,11 @@ class App extends Component {
           <Navbar />
           <Switch>
             <Route path="/" exact component={Home} />
-            <Route path="/about" component={About} />
             <Route path="/services" component={Services} />
             <Route path="/login" component={Login} />
+
+            {/* Possible Dashboard Page Route (Placeholder For New Content to Come). */}
+            <Route path="/dashboard" component={Dashboard} />
           </Switch>
         </div>
       </Router>

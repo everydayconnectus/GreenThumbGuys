@@ -40,7 +40,7 @@
     }
     /* Creates a nice new background for the collapse dropdown only in mobile */
     ul.navbar-nav.ml-auto {
-        border-bottom: 0.4rem solid #0ed145;
+
         background-color: #343a40;
         width: 100%;
     }

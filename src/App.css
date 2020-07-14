@@ -1,10 +1,25 @@
-/* ------------------------------ G L O B A L _ _ S T Y L I N G _ _----------------------------------------------- */
+/* ******************************************************************************************************************************* */
+
+/*      --------------------------------------- GLOBAL STYLING --------------------------------------- */
+
+/* ******************************************************************************************************************************* */
+
+/* Global Reset Definitions */
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Global HTML Definitions */
+
+html {
+  /* Conversion that makes each rem = to 10px */
+  font-size: 62.5%;
+}
+
+/* Global Default Button Rules */
 
 button {
   opacity: 1;
@@ -13,32 +28,47 @@ button {
   color: #ffffff;
 }
 
+/* Keep mobile buttons from being shown on bigger screens */
+
 #mobileThumb {
   display: none;
 }
 
-.btn-warning {
-  color: #ffffff !important;
+/* Scrollbar Style */
+
+body::-webkit-scrollbar {
+  width: 12px;
 }
 
-html {
-  /* Conversion that makes each rem = to 10px */
-  font-size: 62.5%;
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #0ed145;
+  outline: 10px solid #696966;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #269740;
+  outline: 10px solid #696966;
 }
 
 /* ******************************************************************************************************************************* */
 
-/* -----------------------------------------N A V B A R _ _ S E C T I O N _ _ S T Y L E S _ _ ----------------------------------- --- */
+/*      --------------------------------------- NAVBAR SECTION STYLING --------------------------------------- */
 
-#ThumbContext {
-  font-size: 6rem;
-}
+/* ******************************************************************************************************************************* */
+
+/* Pretty Self Explanatory */
 
 .navbar {
+  border-bottom: 4px solid #0ed145;
   height: 8vh;
-  position: fixed;
-  top: 0;
 }
+
+/* Resizes Nav Link Size */
 
 .nav-item {
   font-size: 2rem;
@@ -46,15 +76,11 @@ html {
 
 /* ******************************************************************************************************************************* */
 
-/* -----------------------------------------H O M E _ _ S E C T I O N _ _ S T Y L E S _ _ ----------------------------------- --- */
+/*      --------------------------------------- HOME SECTION STYLING --------------------------------------- */
 
-.home-section h1 {
-  font-size: 6rem;
-}
+/* ******************************************************************************************************************************* */
 
-.home-section h3 {
-  font-size: 3rem;
-}
+/* 'Professional Landscaping' Text */
 
 .home-welcome, #ThumbTitle {
   display: flex;
@@ -69,9 +95,34 @@ html {
   width: 100%;
 }
 
+/* Child Text of 'Professional Landscaping' */
+
+#ThumbContext {
+  font-size: 6rem;
+}
+
+/* Home Buttons */
+
+#btnCompany, #btnClient {
+  padding: 0 2rem 0rem 2rem;
+  margin-right: 4rem;
+  font-size: 4.5rem;
+  border-radius: 10px;
+}
+
+/* ******************************************************************************************************************************* */
+
+/*      --------------------------------------- CAROUSEL SECTION STYLES --------------------------------------- */
+
+/* ******************************************************************************************************************************* */
+
+/* Controls the brightness of the carousel images */
+
 .carousel-item {
   filter: brightness(60%);
 }
+
+/* Contains the parent and child text 'Professional Landscaping' */
 
 .carousel-caption {
   position: absolute;
@@ -84,20 +135,6 @@ html {
   text-align: center;
 }
 
-.carousel-inner {
-  position: relative;
-  width: 100%;
-  height: 1193px;
-  overflow: hidden;
-}
-
-#btnCompany, #btnClient {
-  padding: 0 2rem 0rem 2rem;
-  margin-right: 4rem;
-  font-size: 4.5rem;
-  border-radius: 10px;
-}
-
 /* Home Carousel Stock Slide Images */
 
 .Slides {
@@ -106,55 +143,53 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  /* overflow: hidden; */
   height: 100vh !important;
   width: 100vw !important;
 }
 
-/* ********************************************************************************************************************************* */
+/* Controls the size of the carousel */
 
-/* -------------------------------------------A B O U T _ _ S E C T I O N _ _ S T Y L E S _ _ --------------------------------------- */
-
-.about-section {
-  height: 125vh;
-  background-color: #ffffff;
-  background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  height: 1193px;
+  overflow: hidden;
 }
+
+/* ******************************************************************************************************************************* */
+
+/*      --------------------------------------- OUR SERVICES STYLING --------------------------------------- */
+
+/* ******************************************************************************************************************************* */
+
+/* Services Section Style */
+
+.services-section {
+  background: url("/images/backgrounds/ourservices/bgabout.png");
+  height: 120vh;
+}
+
+/* Services Jumbo Background Stock Photo */
 
 .jumbotron {
-  background: url("/images/backgrounds/jumbostock.png");
-  clip-path: polygon(100% 0, 100% 100%, 53% 100%, 50% 91%, 47% 100%, 0 100%, 0 0);
-  /* background: url("https://images.unsplash.com/photo-1472133530746-ae9b21e91c41?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"); */
+  background: url("/images/backgrounds/ourservices/jumbostock.png");
+  clip-path: polygon(100% 0, 100% 100%, 54% 100%, 50% 91%, 46% 100%, 0 100%, 0 0);
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-position: left bottom -20rem; */
-  height: 40vh;
   transform: scaleX(-1);
-  /* filter: grayscale(75%); */
-  /* filter: blur(0.2rem) brightness(70%); */
   color: white;
-  /* border-bottom: 1rem solid #696969; */
+  height: 40vh;
 }
 
-.jumbo {
-  transform: scaleX(-1);
-}
+/* Child text of 'Our Services' */
 
-#AboutContent {
-  margin-top: 2%;
-}
-
-#AboutBrand {
-  font-size: 8rem;
-  font-weight: bold;
-}
-
-#AboutContext {
+#ServiceContext {
   font-size: 3rem;
   margin: auto;
   width: 50%;
 }
+
+/* Jumbo 'About Us' Text */
 
 #aboutTitle {
   font-size: 20rem;
@@ -169,52 +204,21 @@ html {
   font-weight: bold;
 }
 
-/* ***************************************************************************************************************************************** */
-
-/* --------------------------------S E R V I C E S _ _ S E C T I O N _ _ S T Y L E S ------------------------------------------------------- */
-
-.services-section {
-  height: 200vh;
-  background-color: yellow;
-}
+/* Service Bundles */
 
 .ServiceCards {
   position: absolute;
   right: 50vh;
 }
 
-.login-section {
-  height: 100vh;
-  background-color: purple;
-}
-
-.services-section {
-  
-}
-
-.service-info {
-  margin: auto;
-  width: 95%;
-  position: relative;
-  top: 3rem;
-  bottom: 3rem;
-}
-
-.service-info h1 {
-  font-size: 4rem;
-}
-
-.service-cards {
-  margin: auto;
-  width: 95%;
-  position: relative;
-  top: 7rem;
-}
+/* Card Body Size */
 
 .card-info {
   font-size: 1.5rem;
   padding: 1rem;
 }
+
+/* Service Bundle Card Styles */
 
 #StandardBundle {
   background: #00cff5;
@@ -234,4 +238,30 @@ html {
 #CommercialBundle {
   background: #f87c00;
   color: #ffffff;
+}
+
+/* ******************************************************************************************************************************* */
+
+/*      --------------------------------------- OUR SERVICES STYLING --------------------------------------- */
+
+/* ******************************************************************************************************************************* */
+
+/* Login/Sign Up Container */
+
+.login-section {
+  height: 92vh;
+  background: url("/images/backgrounds/login/bglogin.png") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+}
+
+/* Temp Placeholder Div */
+
+.ComingSoon {
+  position: fixed;
+  width: 100%;
+  top: 40%;
 }
