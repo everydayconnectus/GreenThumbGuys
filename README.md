@@ -1,6 +1,7 @@
 # Green Thumb Guys - Professional Landscaping Services
 ### We provide professional residential & commercial landscaping services.
 
-![preview](./public/images/backgrounds/greenapp.png)
+![preview](/public/images/backgrounds/readme/greenapp.png)
+
 
 View Live Site: Coming soon!
