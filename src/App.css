@@ -240,28 +240,41 @@ body::-webkit-scrollbar-thumb:hover {
   color: #ffffff;
 }
 
-/* ******************************************************************************************************************************* */
 
-/*      --------------------------------------- LOGIN/REGISTER STYLING --------------------------------------- */
+/* ***************************************************************************************************************************************** */
 
-/* ******************************************************************************************************************************* */
+/* --------------------------------L O G I N _ _ S E C T I O N _ _ S T Y L E S ------------------------------------------------------------- */
 
-/* Login/Sign Up Container */
+
 
 .login-section {
-  height: 92vh;
-  background: url("/images/backgrounds/login/bglogin.png") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  text-align: center;
+  height: 100vh;
+  background-color: white;
+  margin: auto;
+  width: 50%;
+  margin-top: 10%;
 }
 
-/* Temp Placeholder Div */
+#login-banner{
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
 
-.ComingSoon {
-  position: fixed;
-  width: 100%;
-  top: 40%;
+.formLabel {
+  font-size: 2rem;
+}
+
+.formText{
+  font-size: 1.4rem;
+}
+
+
+#clientSubmit{
+  
+  padding: 0 2rem 0rem 2rem;
+  margin-right: 4rem;
+  font-size: 2rem;
+  border-radius: 10px;
+
 }
