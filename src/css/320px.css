@@ -38,6 +38,10 @@
         color: #ffffff;
         width: 100%;
     }
+    /* Keeps content aligned with everything, even when clicking the mobile dropdown hamburger */
+    nav.navbar.navbar-expand-lg.navbar-light.bg-dark {
+        position: fixed;
+    }
     /* Creates a nice new background for the collapse dropdown only in mobile */
     ul.navbar-nav.ml-auto {
         background-color: #343a40;
@@ -106,7 +110,7 @@
     }
     /* Background Image Resize */
     .services-section {
-        height: 316vh;
+        height: 328vh;
     }
     /* Parent Heading For 'Our Services' */
     h2.display-1.mt-5.text-success.font-weight-bold {
@@ -122,6 +126,13 @@
     h2.display-2.mt-5.text-success {
         font-size: 2.3rem;
     }
+    /* Service Card Container */
+    .ServiceCards {
+        position: relative;
+        margin-top: 10rem;
+        left: 0rem;
+    }
+    /* Service Card Resize */
     .card {
         position: relative;
         display: flex;
@@ -129,12 +140,6 @@
         flex-direction: column;
         border: 1px solid #ffffff;
         border-radius: .25rem;
-    }
-    /* Service Card Container */
-    .ServiceCards {
-        position: relative;
-        margin-top: 10rem;
-        left: 0rem;
     }
     /* Background Image Resize */
     .about-section {

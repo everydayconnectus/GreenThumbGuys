@@ -27,7 +27,6 @@
     }
     /* Navbar Mobile Collapse Custom Styling */
     .navbar-light .navbar-toggler, .navbar-toggler-icon {
-
         border-radius: 0px;
         color: #ffffff;
         width: 100%;
@@ -90,30 +89,61 @@
     /* ******************************************************************************************************************************* */
     /*      --------------------------------------- MOBILE RULES FOR THE SERVICES --------------------------------------- */
     /* ******************************************************************************************************************************* */
-    /* This section is left uncommented because it may be getting merged with the 'About Section'. */
-    .services-section {
-        overflow-y: visible !important;
-        overflow-x: visible !important;
-        margin-top: 5rem;
-    }
-    .service-info {
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-        display: flex;
-    }
-    #OurServices {
-        font-size: 2.5rem;
-        margin-bottom: 2rem;
-    }
-    .service-info {
+    /* Jumbo 'About Us' Brand */
+    #aboutTitle {
+        font-size: 10rem;
+        position: absolute;
         text-align: center;
+        z-index: 1;
+        top: 18rem;
+        color: white;
+        left: 1rem;
+        font-weight: bold;
+        width: 100%;
     }
-    .service-info h2 {
-        font-size: 1.3rem;
+    /* Background Image Resize */
+    .services-section {
+        height: 430vh;
     }
-    .Slides {
-        background: url("/images/backgrounds/lawn.jpg") no-repeat center;
-        background-position: center;
+    /* Parent Heading For 'Our Services' */
+    h2.display-1.mt-5.text-success.font-weight-bold {
+        font-size: 6.1rem;
+    }
+    /* 'Our Services' Child Paragraph (About Our Services) */
+    #ServiceContext {
+        font-size: 2.6rem;
+        margin: auto;
+        width: 100%;
+    }
+    /* Parent Label 'Premium Service Bundles' */
+    h2.display-2.mt-5.text-success {
+        font-size: 6.3rem;
+    }
+    /* Service Card Container */
+    .ServiceCards {
+        position: relative;
+        margin-top: 100rem;
+        left: 50rem;
+    }
+    /* Service Card Resize */
+    .card {
+        position: relative;
+        width: 100%;
+        border: 1px solid #ffffff;
+        border-radius: .25rem;
+    }
+    /* Service Cards Custom Width */
+    .ServiceCards.w-50.mt-5 {
+        width: 36vw !important;
+        display: block;
+    }
+    /* Background Image Resize */
+    .about-section {
+        height: 100%;
+    }
+    /* Jumbotron Polygon Style */
+    .jumbotron {
+        clip-path: polygon(100% 0, 100% 100%, 60% 100%, 50% 88%, 42% 100%, 0 100%, 0 0);
+        height: 50vh;
     }
 }
