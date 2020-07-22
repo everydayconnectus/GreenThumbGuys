@@ -240,41 +240,96 @@ body::-webkit-scrollbar-thumb:hover {
   color: #ffffff;
 }
 
+/* ******************************************************************************************************************************* */
 
-/* ***************************************************************************************************************************************** */
+/*      --------------------------------------- REGISTER/LOGIN STYLE --------------------------------------- */
 
-/* --------------------------------L O G I N _ _ S E C T I O N _ _ S T Y L E S ------------------------------------------------------------- */
+/* ******************************************************************************************************************************* */
 
+/* Keeps the Login Section Tight */
 
-
-.login-section {
-  height: 100vh;
-  background-color: white;
+#FormContainer {
+  position: relative;
+  top: 82px;
+  background-color: #343a40;
+  border: 4px solid #0ed145;
+  border-radius: 2%;
+  color: #ffffff;
+  padding: 3vw;
+  height: 80vh;
   margin: auto;
   width: 50%;
-  margin-top: 10%;
 }
 
-#login-banner{
-  font-size: 4rem;
-  text-align: center;
-  margin-bottom: 2rem;
+.login-section {
+  background-image: Url(/images/backgrounds/login/bglogin.png);
+  background-repeat: no-repeat cover;
+  background-position-x: 260rem;
+  height: 92vh
 }
+
+.DataField {
+  background-color: #0ed145 !important;
+  border: none !important;
+  color: #ffffff !important;
+}
+
+select#bundleSelect {
+  color: #ffffff;
+}
+
+/* Changes the Placeholder Text to White. */
+
+::placeholder {
+  /* Firefox */
+  color: #ffffff !important;
+  font-size: 1.5rem;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #ffffff !important;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #ffffff !important;
+}
+
+/* Keeps the 'Sign Up' Text Center */
+
+#login-banner {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Input Box Field Labels */
 
 .formLabel {
   font-size: 2rem;
 }
 
-.formText{
-  font-size: 1.4rem;
+/* 'Upload Picture' Size */
+
+.formText {
+  font-size: 2rem;
 }
 
+/* Submit Button */
 
-#clientSubmit{
-  
-  padding: 0 2rem 0rem 2rem;
-  margin-right: 4rem;
+#btnSubmit {
+  padding: 1rem 4rem 1rem 4rem;
   font-size: 2rem;
+  margin-top: 2rem;
   border-radius: 10px;
+}
 
+input[type="file"] {
+  display: none;
+}
+
+hr {
+  background-color: #0ed145;
+  border-top: 5px solid #0ed145 !important;
+  border-radius: 10%;
 }
