@@ -1,5 +1,5 @@
 const express = require("express");
-// const cors = require("cors");
+const cors = require("cors");
 const path = require("path");
 const mongoose = require("mongoose");
 const routes = require("./routes/routes.js");
@@ -14,17 +14,17 @@ app.use(bodyParser.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// const corsOpts = {
-//   origin: "*",
-//   methods: ["GET", "POST"],
-//   allowedHeaders: ["Content-Type"]
-// };
+const corsOpts = {
+  origin: "*",
+  methods: ["GET", "POST"],
+  allowedHeaders: ["Content-Type"]
+};
 
-// app.use(cors(corsOpts));
-// // Serve up static assets (usually on heroku)
-// if (process.env.NODE_ENV === "production") {
-//   app.use(express.static("client/build"));
-// }
+app.use(cors(corsOpts));
+// Serve up static assets (usually on heroku)
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+}
 
 // Connect to MongoDB
 mongoose.connect(

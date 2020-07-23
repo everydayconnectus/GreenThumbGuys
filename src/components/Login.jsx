@@ -1,10 +1,62 @@
 // Dependencies.
-import React, { Component } from 'react';
+import React, { useState } from 'react'; // Allows for use of components
 import { Col, Row, Button, Form, FormGroup, Label, Input, Badge } from 'reactstrap';
+import axios from "axios";
+
+
+const initialFormData = Object.freeze({
+  firstName: "",
+    lastName: "",
+    email: "",
+    password: "",
+    address: "",
+     city: "",
+    state: "",
+    zipcode: "",
+    bundle: ""
+});
+
+
+
+
+
+const Login = () => {
+
+  const [formData, updateFormData] = useState(initialFormData);
+
+  const handleChange = (e) => {
+    updateFormData({
+      ...formData,
+
+      // Trimming any whitespace
+      [e.target.name]: e.target.value.trim()
+    });
+};
+
+
+const handleSubmit = (e) => {
+  e.preventDefault()
+  console.log(formData);
+  // ... submit to API or something
+
+
+  axios
+  .post("/api/clients", formData)
+  .then(res => {
+    console.log(res);
+  })
+  .catch(error =>{
+    console.log(error)
+  });
+};
+
+
+
+
+
 
 // Draw Component Class.
-class Login extends Component {
-  render() {
+
     return (
       // 'Login' Component Container.
       <div className="login-section">
@@ -24,34 +76,42 @@ class Login extends Component {
             <Col md={6}>
               <FormGroup className="FormGroup">
                 <Label for="FirstName" className="formLabel">First Name *</Label>
-                <Input type="text" className="DataField" name="fName" id="fName" placeholder="Enter Your First Name...." bsSize="lg" required="true" />
+                <Input type="text" className="DataField" name="firstName" id="firstName" placeholder="Enter Your First Name...." bsSize="lg" required="true" onChange={handleChange}/>
               </FormGroup>
             </Col>
             <Col md={6}>
               <FormGroup className="FormGroup">
                 <Label for="LastName" className="formLabel">Last Name *</Label>
-                <Input type="text" className="DataField" name="lName" id="lName" placeholder="Enter your Last Name...." bsSize="lg" required="true" />
+                <Input type="text" className="DataField" name="lastName" id="lastName" placeholder="Enter your Last Name...." bsSize="lg" required="true" onChange={handleChange}/>
               </FormGroup>
             </Col>
           </Row>
+
+          <Row form>
+            
+              <FormGroup>
+                <Label for="City" className="formLabel">Address </Label>
+                <Input type="text" className="DataField" name="address" id="address" placeholder="Enter Your Street Address Here..." bsSize="lg" required="true" onChange={handleChange} />
+              </FormGroup>
+              </Row>
           {/*  City, State & Zip*/}
           <Row form>
             <Col md={6}>
               <FormGroup>
                 <Label for="City" className="formLabel">City *</Label>
-                <Input type="text" className="DataField" name="city" id="city" placeholder="Enter City Here..." bsSize="lg" required="true" />
+                <Input type="text" className="DataField" name="city" id="city" placeholder="Enter City Here..." bsSize="lg" required="true" onChange={handleChange} />
               </FormGroup>
             </Col>
             <Col md={4}>
               <FormGroup>
                 <Label for="State" className="formLabel">State *</Label>
-                <Input type="text" className="DataField" name="state" id="state" placeholder="Enter State Here..." bsSize="lg" required="true" />
+                <Input type="text" className="DataField" name="state" id="state" placeholder="Enter State Here..." bsSize="lg" required="true"  onChange={handleChange}/>
               </FormGroup>
             </Col>
             <Col md={2}>
               <FormGroup>
                 <Label for="Zip" className="formLabel">Zip Code *</Label>
-                <Input type="text" className="DataField" name="zip" id="zip" placeholder="Enter Zip Code here...." bsSize="lg" required="true" />
+                <Input type="text" className="DataField" name="zipcode" id="zipcode" placeholder="Enter Zip Code here...." bsSize="lg" required="true"  onChange={handleChange}/>
               </FormGroup>
             </Col>
           </Row>
@@ -59,25 +119,25 @@ class Login extends Component {
           {/* Email Address */}
           <FormGroup>
             <Label for="Email" className="formLabel">Email Address *</Label>
-            <Input type="email" className="DataField" name="email" id="email" placeholder="Enter Full Email Here (ex: johndoe@email.com)" bsSize="lg" required="true" />
+            <Input type="email" className="DataField" name="email" id="email" placeholder="Enter Full Email Here (ex: johndoe@email.com)" bsSize="lg" required="true" onChange={handleChange}/>
           </FormGroup>
 
           {/* Phone Number */}
           <FormGroup>
             <Label for="phone" className="formLabel">Home/Mobile Phone</Label>
-            <Input type="text" className="DataField" name="phone" id="phone" placeholder="Enter Phone Number Here...." bsSize="lg" />
+            <Input type="text" className="DataField" name="phone" id="phone" placeholder="Enter Phone Number Here...." bsSize="lg" onChange={handleChange} />
           </FormGroup>
 
           {/* Password */}
           <FormGroup>
             <Label for="Password" className="formLabel">Password *</Label>
-            <Input type="password" className="DataField" name="password" id="password" placeholder="Enter Password Here..." bsSize="lg" required="true" />
+            <Input type="password" className="DataField" name="password" id="password" placeholder="Enter Password Here..." bsSize="lg" required="true" onChange={handleChange} />
           </FormGroup>
 
           {/* Dropdown Bundles */}
           <FormGroup>
             <Label for="Select" className="formLabel"> Select A Service Bundle *</Label>
-            <Input type="select" className="DataField" name="select" id="bundleSelect" bsSize="lg">
+            <Input type="select" className="DataField" name="bundle" id="bundle" bsSize="lg" onChange={handleChange}>
               <option className="DataField">Choose A Service Bundle</option>
               <option className="DataField">Basic Service Bundle (Full Year)</option>
               <option className="DataField">Basic Service Bundle (Seasonal)</option>
@@ -90,7 +150,7 @@ class Login extends Component {
           </FormGroup>
 
           {/* Create Account Button (POST) */}
-          <Button color="success" className="hvr-grow" type="submit" id="btnSubmit">Create Account</Button>
+          <Button color="success" className="hvr-grow" type="submit" id="btnSubmit" onClick ={handleSubmit}>Create Account</Button>
 
           {/* 'Login Now | Reset Password' Container */}
           <Row className="text-center">
@@ -115,7 +175,7 @@ class Login extends Component {
         </Form>
       </div>
     );
-  };
+  
 };
 
 // Export Component.

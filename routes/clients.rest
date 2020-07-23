@@ -5,13 +5,14 @@ POST http://localhost:3000/api/clients
 Content-Type: application/json
 
 {
-    "firstname": "Jon",
-    "lastname": "doe",
+    "firstName": "Jon",
+    "lastName": "doe",
     "email": "email@gmailnetcom.net",
     "password": "mypassword",
-    "street": "123 Maple Street",
+    "address": "123 Maple Street",
     "city": "Glendale",
     "state": "California",
+    "zipcode": "94736",
     "bundle": "Green Thumb Bundle",
     "pic": "myhome.jpg"
 }
