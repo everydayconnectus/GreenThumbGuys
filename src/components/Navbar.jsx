@@ -2,6 +2,8 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 
+import { NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+
 // Draw Component Class.
 class Navbar extends Component {
   render() {
@@ -10,7 +12,7 @@ class Navbar extends Component {
       <nav className="navbar navbar-expand-lg navbar-light bg-dark">
         {/* Official 'Green Thumb Guys' Logo */}
         <Link className="navbar-brand" to="/">
-          <img class="hvr-shrink" height="51" width="70%" id="SiteLogo" src="/images/logos/logo.png" alt="SiteLogo" />
+          <img ClassName="hvr-shrink" height="51" width="70%" id="SiteLogo" src="/images/logos/logo.png" alt="SiteLogo" />
         </Link>
         {/* Site Navigation (Mobile Collapse) */}
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#SiteNavigation" aria-controls="SiteNavigation" aria-expanded="false" aria-label="Toggle Navigation">
@@ -39,7 +41,19 @@ class Navbar extends Component {
 
             {/* Login / Sign Up Link */}
             <li className="nav-item hvr-shrink">
-              <Link className="nav-link text-white text-uppercase mx-5" to="/login"><i className="fas fa-user-plus"></i> Join / Login</Link>
+              {/* <Link className="nav-link text-white text-uppercase mx-5" to="/login"><i className="fas fa-user-plus"></i> Login / Register</Link> */}
+
+
+              <UncontrolledDropdown setActiveFromChild>
+                <DropdownToggle tag="a" className="nav-link text-white text-uppercase mx-5" caret>
+                  <i className="fas fa-user-plus text-white"></i><Link to="/login" > <span className="text-white">Register</span></Link>
+                </DropdownToggle>
+
+                <DropdownMenu>
+                  <Link to="/login" > <DropdownItem to="/login" active>Link</DropdownItem></Link>
+                </DropdownMenu>
+              </UncontrolledDropdown>
+
             </li>
           </ul>
         </div>

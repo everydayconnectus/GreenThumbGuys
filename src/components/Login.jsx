@@ -14,7 +14,7 @@ class Login extends Component {
           <Row>
             <Col md={12}>
               <h1 className="display-1" id="login-banner">
-                <img width="600" src="/images/logos/logo.png" alt="SiteLogo" />
+                <img id="SiteLogoLogin" width="600" src="/images/logos/logo.png" alt="SiteLogo" />
               </h1>
               <h2 className="display-2 text-center">Register Account</h2>
             </Col>
@@ -22,13 +22,13 @@ class Login extends Component {
           {/* First & Land Name */}
           <Row>
             <Col md={6}>
-              <FormGroup>
+              <FormGroup className="FormGroup">
                 <Label for="FirstName" className="formLabel">First Name *</Label>
                 <Input type="text" className="DataField" name="fName" id="fName" placeholder="Enter Your First Name...." bsSize="lg" required="true" />
               </FormGroup>
             </Col>
             <Col md={6}>
-              <FormGroup>
+              <FormGroup className="FormGroup">
                 <Label for="LastName" className="formLabel">Last Name *</Label>
                 <Input type="text" className="DataField" name="lName" id="lName" placeholder="Enter your Last Name...." bsSize="lg" required="true" />
               </FormGroup>
@@ -89,30 +89,27 @@ class Login extends Component {
             </Input>
           </FormGroup>
 
-          {/* Hidden Upload Form; May be used on the client dashboard */}
-          {/* <FormGroup>
-            <Label for="Upload" className="btn btn-success">Upload Picture</Label>
-            <Input type="file" className="DataField" name="file" id="Upload" bsSize="lg" /> <span id="UploadData"></span>
-
-            <FormText color="white" className="formText">
-              Upload a Picture of your Home and be sure that it includes the front lawn
-           </FormText>
-          </FormGroup> */}
-
           {/* Create Account Button (POST) */}
           <Button color="success" className="hvr-grow" type="submit" id="btnSubmit">Create Account</Button>
+
+          {/* 'Login Now | Reset Password' Container */}
           <Row className="text-center">
+            {/* Heading Text */}
             <Col className="mb-3" md={12}>
-              <p className="display-2">Already A Client?</p>
+              <p id="AlreadyClient" className="display-2">Already A Client?</p>
+              {/* Content Seperator */}
               <hr className="content-seperator" />
             </Col>
           </Row>
+          {/* Login/Reset Password Container */}
           <Row className="text-center mt-4">
+            {/* Login Text */}
             <Col md={6}>
-              <a className="display-3 text-success" href="#">Login Now</a>
+              <a id="LoginNow" className="display-3 text-success" href="#">Login Now</a>
             </Col>
+            {/* Reset Password Text */}
             <Col md={6}>
-              <a className="display-3 text-success" href="#">Reset Password</a>
+              <a id="ResetPassword" className="display-3 text-success" href="#">Reset Password</a>
             </Col>
           </Row>
         </Form>

@@ -11,11 +11,11 @@ class About extends Component {
             // 'About Us' Component Container.
             <div className="services-section" id="services">
                 {/* 'About Us' Component Brand */}
-                <h1 class="display-4" id="aboutTitle">About Us</h1>
+                <h1 className="display-4" id="aboutTitle">About Us</h1>
 
                 {/* Jumbo 'About Us' Image */}
-                <div class="jumbotron jumbotron-fluid">
-                    <div class="container jumbo"></div>
+                <div className="jumbotron jumbotron-fluid">
+                    <div className="container jumbo"></div>
                 </div>
 
                 {/* 'About Us' Context Container */}

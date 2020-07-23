@@ -246,7 +246,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* ******************************************************************************************************************************* */
 
-/* Keeps the Login Section Tight */
+/* Keeps the login form tight and styled */
 
 #FormContainer {
   position: relative;
@@ -261,6 +261,8 @@ body::-webkit-scrollbar-thumb:hover {
   width: 50%;
 }
 
+/* Login Section style and background */
+
 .login-section {
   background-image: Url(/images/backgrounds/login/bglogin.png);
   background-repeat: no-repeat cover;
@@ -268,14 +270,12 @@ body::-webkit-scrollbar-thumb:hover {
   height: 92vh
 }
 
+/* Input Field Color */
+
 .DataField {
   background-color: #0ed145 !important;
   border: none !important;
   color: #ffffff !important;
-}
-
-select#bundleSelect {
-  color: #ffffff;
 }
 
 /* Changes the Placeholder Text to White. */
@@ -296,7 +296,7 @@ select#bundleSelect {
   color: #ffffff !important;
 }
 
-/* Keeps the 'Sign Up' Text Center */
+/* Keeps the logo center */
 
 #login-banner {
   margin-bottom: 2rem;
@@ -309,12 +309,6 @@ select#bundleSelect {
   font-size: 2rem;
 }
 
-/* 'Upload Picture' Size */
-
-.formText {
-  font-size: 2rem;
-}
-
 /* Submit Button */
 
 #btnSubmit {
@@ -324,9 +318,7 @@ select#bundleSelect {
   border-radius: 10px;
 }
 
-input[type="file"] {
-  display: none;
-}
+/* Content Seperator Size */
 
 hr {
   background-color: #0ed145;
