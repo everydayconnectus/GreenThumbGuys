@@ -47,7 +47,7 @@ const StockSlider = () => {
                 key={item.src}>
 
                 {/* Populate Slide Images */}
-                <img className="Slides" src={item.src} />
+                <img className="Slides" src={item.src} alt={item.src} />
             </CarouselItem>
         );
     });

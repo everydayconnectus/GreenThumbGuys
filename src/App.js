@@ -1,6 +1,6 @@
 // React Dependencies.
-import React, { Component } from 'react'; // Allows for use of components
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'; // Allows for routing in react
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 // Stylesheet Definitions.
 import './App.css'; // Global CSS Site Styling.
@@ -22,10 +22,8 @@ import 'bootstrap/dist/js/bootstrap.min.js'; // Bootstrap JS Library.
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Services from './components/Services';
+import Register from './components/Register';
 import Login from './components/Login';
-
-// Possible Dashboard Page Route (Placeholder For New Content to Come).
-import Dashboard from './components/Dashboard';
 
 // Draw Component Class.
 class App extends Component {
@@ -37,10 +35,8 @@ class App extends Component {
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/services" component={Services} />
+            <Route path="/register" component={Register} />
             <Route path="/login" component={Login} />
-
-            {/* Possible Dashboard Page Route (Placeholder For New Content to Come). */}
-            <Route path="/dashboard" component={Dashboard} />
           </Switch>
         </div>
       </Router>

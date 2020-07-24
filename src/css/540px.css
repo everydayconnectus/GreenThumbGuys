@@ -4,7 +4,7 @@
     /* ******************************************************************************************************************************* */
     /*      --------------------------------------- MOBILE RULES FOR THE NAVBAR --------------------------------------- */
     /* ******************************************************************************************************************************* */
-     /* Our Official Logo */
+    /* Our Official Logo */
     #SiteLogo {
         margin-left: 10%;
         padding: 10px;
@@ -156,5 +156,60 @@
     /* Jumbotron Polygon Style */
     .jumbotron {
         clip-path: polygon(100% 0, 100% 100%, 59% 100%, 50% 90%, 41% 100%, 0 100%, 0 0);
+    }
+    /* ******************************************************************************************************************************* */
+    /*      --------------------------------------- CLIENT REGISTRATION STYLE --------------------------------------- */
+    /* ******************************************************************************************************************************* */
+    /* Keeps the register form tight and styled */
+    #FormContainer {
+        position: relative;
+        top: 95px;
+        background-color: #343a40;
+        border: 4px solid #0ed145;
+        border-radius: 2%;
+        color: #ffffff;
+        padding: 6vw;
+        height: 79vh;
+        margin: auto;
+        width: 93%;
+    }
+    /* register Logo */
+    #SiteLogoregister {
+        display: none;
+    }
+    /* 'Register Account' Text */
+    h2.display-2.text-center {
+        font-size: 3.4rem;
+        margin-top: 1rem;
+    }
+    /* Resizes the background */
+    .register-section {
+        background-image: Url(/images/backgrounds/register/bgregister.png);
+        background-repeat: no-repeat cover;
+        background-position-x: 260rem;
+        height: 159vh;
+    }
+    /* Resizes the register Section */
+    #FormContainer {
+        position: relative;
+        top: 110px;
+        background-color: #343a40;
+        border: 4px solid #0ed145;
+        border-radius: 2%;
+        color: #ffffff;
+        padding: 6vw;
+        height: 79vh;
+        margin: auto;
+        width: 93%;
+        height: 87%;
+    }
+    /* Resize 'Already A Client?' Text */
+    #AlreadyClient {
+        margin-top: 2rem;
+        font-size: 3rem;
+    }
+    /* 'register Now' Link */
+    #registerNow {
+        font-size: 3.5rem !important;
     }
 }

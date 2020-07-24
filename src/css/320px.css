@@ -150,9 +150,9 @@
         clip-path: polygon(100% 0, 100% 100%, 59% 100%, 50% 90%, 41% 100%, 0 100%, 0 0);
     }
     /* ******************************************************************************************************************************* */
-    /*      --------------------------------------- REGISTER/LOGIN STYLE --------------------------------------- */
+    /*      --------------------------------------- CLIENT REGISTRATION STYLE --------------------------------------- */
     /* ******************************************************************************************************************************* */
-    /* Keeps the login form tight and styled */
+    /* Keeps the register form tight and styled */
     #FormContainer {
         position: relative;
         top: 95px;
@@ -165,9 +165,9 @@
         margin: auto;
         width: 93%;
     }
-    /* Login Logo */
-    #SiteLogoLogin {
-        width: 103%;
+    /* register Logo */
+    #SiteLogoregister {
+        display: none;
     }
     /* 'Register Account' Text */
     h2.display-2.text-center {
@@ -175,16 +175,16 @@
         margin-top: 1rem;
     }
     /* Resizes the background */
-    .login-section {
-        background-image: Url(/images/backgrounds/login/bglogin.png);
+    .register-section {
+        background-image: Url(/images/backgrounds/register/bgregister.png);
         background-repeat: no-repeat cover;
         background-position-x: 260rem;
         height: 159vh;
     }
-    /* Resizes the Login Section */
+    /* Resizes the register Section */
     #FormContainer {
         position: relative;
-        top: 95px;
+        top: 110px;
         background-color: #343a40;
         border: 4px solid #0ed145;
         border-radius: 2%;
@@ -195,14 +195,13 @@
         width: 93%;
         height: 87%;
     }
+    /* Resize 'Already A Client?' Text */
     #AlreadyClient {
         margin-top: 2rem;
         font-size: 3rem;
     }
-    #LoginNow {
-        font-size: 3.5rem !important;
-    }
-    #ResetPassword {
+    /* 'register Now' Link */
+    #registerNow {
         font-size: 3.5rem !important;
     }
 }

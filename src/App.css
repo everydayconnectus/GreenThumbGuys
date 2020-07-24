@@ -242,29 +242,29 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* ******************************************************************************************************************************* */
 
-/*      --------------------------------------- REGISTER/LOGIN STYLE --------------------------------------- */
+/*      --------------------------------------- USER REGISTRATION STYLE --------------------------------------- */
 
 /* ******************************************************************************************************************************* */
 
-/* Keeps the login form tight and styled */
+/* Keeps the register form tight and styled */
 
 #FormContainer {
   position: relative;
-  top: 82px;
+  top: 5rem;
   background-color: #343a40;
   border: 4px solid #0ed145;
   border-radius: 2%;
   color: #ffffff;
   padding: 3vw;
-  height: 80vh;
+  height: 85vh;
   margin: auto;
   width: 50%;
 }
 
-/* Login Section style and background */
+/* register Section style and background */
 
-.login-section {
-  background-image: Url(/images/backgrounds/login/bglogin.png);
+.register-section {
+  background-image: Url(/images/backgrounds/register/bgregister.png);
   background-repeat: no-repeat cover;
   background-position-x: 260rem;
   height: 92vh
@@ -298,7 +298,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* Keeps the logo center */
 
-#login-banner {
+#register-banner {
   margin-bottom: 2rem;
   text-align: center;
 }
