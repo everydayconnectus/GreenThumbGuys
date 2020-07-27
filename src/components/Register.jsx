@@ -1,7 +1,7 @@
 // Dependencies.
 import React, { useState } from 'react'; // Allows for use of components
 import { Col, Row, Button, Form, FormGroup, Label, Input } from 'reactstrap';
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 import axios from "axios";
 
 // Define Default Form Fields Object.
@@ -39,7 +39,7 @@ const Register = () => {
       .post("/api/clients", formData)
       // If Success...
       .then(res => {
-        alert("User registration successful!", res.status);
+        console.log(res);
       })
       // If Failure..
       .catch(error => {
@@ -67,13 +67,13 @@ const Register = () => {
           <Col md={6}>
             <FormGroup className="FormGroup">
               <Label for="FirstName" className="formLabel">First Name *</Label>
-              <Input type="text" className="DataField" name="firstName" id="firstName" placeholder="Enter Your First Name...." bsSize="lg" required={true} onChange={handleChange} />
+              <Input type="text" className="DataField" name="firstName" id="firstName" placeholder="Enter Your First Name..." bsSize="lg" required={true} onChange={handleChange} />
             </FormGroup>
           </Col>
           <Col md={6}>
             <FormGroup className="FormGroup">
               <Label for="LastName" className="formLabel">Last Name *</Label>
-              <Input type="text" className="DataField" name="lastName" id="lastName" placeholder="Enter your Last Name...." bsSize="lg" required={true} onChange={handleChange} />
+              <Input type="text" className="DataField" name="lastName" id="lastName" placeholder="Enter your Last Name..." bsSize="lg" required={true} onChange={handleChange} />
             </FormGroup>
           </Col>
         </Row>
@@ -103,7 +103,7 @@ const Register = () => {
           <Col md={2}>
             <FormGroup>
               <Label for="Zip" className="formLabel">Zip Code *</Label>
-              <Input type="text" className="DataField" name="zipcode" id="zipcode" placeholder="Enter Zip Code here...." bsSize="lg" required={true} onChange={handleChange} />
+              <Input type="text" className="DataField" name="zipcode" id="zipcode" placeholder="Enter Zip Code here..." bsSize="lg" required={true} onChange={handleChange} />
             </FormGroup>
           </Col>
         </Row>
@@ -117,7 +117,7 @@ const Register = () => {
         {/* Phone Number */}
         <FormGroup>
           <Label for="phone" className="formLabel">Home/Mobile Phone</Label>
-          <Input type="text" className="DataField" name="phone" id="phone" placeholder="Enter Phone Number Here...." bsSize="lg" required={false} onChange={handleChange} />
+          <Input type="text" className="DataField" name="phone" id="phone" placeholder="Enter Phone Number Here..." bsSize="lg" required={false} onChange={handleChange} />
         </FormGroup>
 
         {/* Password */}

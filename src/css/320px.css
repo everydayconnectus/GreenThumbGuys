@@ -204,4 +204,51 @@
     #registerNow {
         font-size: 3.5rem !important;
     }
+    /* ******************************************************************************************************************************* */
+    /*      --------------------------------------- USER LOGIN STYLE --------------------------------------- */
+    /* ******************************************************************************************************************************* */
+    /* Login Section style and background */
+    .login-section {
+        background-image: Url(/images/backgrounds/register/bgregister.png);
+        background-repeat: no-repeat cover;
+        background-position-x: 360rem;
+        height: 100vh
+    }
+    /* Login Logo Heading */
+    #login-banner {
+        display: none;
+    }
+    /* Login Form Style */
+    #LoginContainer {
+        position: relative;
+        top: 20rem;
+        background-color: #343a40;
+        border: 4px solid #07e0e3;
+        border-radius: 2%;
+        color: #ffffff;
+        padding: 3vw;
+        height: 65vh;
+        margin: auto;
+        width: 90%;
+    }
+    /* Input Field Style */
+    .LoginField {
+        background-color: #16d3d5 !important;
+        border: none !important;
+        color: #ffffff !important;
+    }
+    /* Login Button */
+    #btnLogin {
+        padding: 1rem 4rem 1rem 4rem;
+        background-color: #07e0e3;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        border-radius: 10px;
+        color: #000000;
+        font-weight: bold;
+    }
+    /* 'Register Now' text */
+    a.display-3.text-info {
+        font-size: 3.5rem;
+    }
 }
