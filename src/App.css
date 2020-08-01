@@ -138,7 +138,7 @@ body::-webkit-scrollbar-thumb:hover {
 /* Home Carousel Stock Slide Images */
 
 .Slides {
-  background: url("/images/backgrounds/lawn.jpg") no-repeat center center;
+  background: url("/images/backgrounds/stockslides/stock1.jpg") no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
