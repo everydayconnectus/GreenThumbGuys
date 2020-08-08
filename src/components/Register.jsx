@@ -157,7 +157,7 @@ const Register = () => {
         <Row className="text-center mt-4">
           {/* register Text */}
           <Col md={12}>
-            <Link id="registerNow" className="display-3 text-success" href="#" to="/login">Login Now</Link>
+            <Link id="loginNow" className="display-3 text-success" href="#" to="/login">Login Now</Link>
           </Col>
         </Row>
       </Form>

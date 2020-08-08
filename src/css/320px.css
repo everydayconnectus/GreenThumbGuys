@@ -32,7 +32,7 @@
         background-color: #696969;
     }
     /* Navbar Mobile Collapse Custom Styling */
-    .navbar-light .navbar-toggler, .navbar-toggler-icon {
+    .navbar-light .navbar-toggler {
         background-color: #0ed145;
         border-radius: 0px;
         color: #ffffff;
@@ -56,10 +56,9 @@
     /* ******************************************************************************************************************************* */
     /* Carousel Center Alignment */
     .carousel-caption {
-        position: relative;
         color: #fff;
-        right: 2rem;
-        top: 15rem;
+        top: 22rem;
+        left: 5rem;
         width: 75%;
     }
     /* Carousel Home Context "Professional Landscaping" Text */
@@ -102,10 +101,10 @@
         position: absolute;
         text-align: center;
         z-index: 1;
-        top: 19rem;
-        color: white;
-        left: 0rem;
-        font-weight: bold;
+        top: 13rem;
+        color: #fff;
+        left: 0;
+        font-weight: 700;
         width: 100%;
     }
     /* Background Image Resize */
@@ -148,6 +147,10 @@
     /* Jumbotron Polygon Style */
     .jumbotron {
         clip-path: polygon(100% 0, 100% 100%, 59% 100%, 50% 90%, 41% 100%, 0 100%, 0 0);
+    }
+    /* Scale Background Image */
+    div#services {
+        height: 410vh;
     }
     /* ******************************************************************************************************************************* */
     /*      --------------------------------------- CLIENT REGISTRATION STYLE --------------------------------------- */
@@ -201,7 +204,7 @@
         font-size: 3rem;
     }
     /* 'register Now' Link */
-    #registerNow {
+    #loginNow {
         font-size: 3.5rem !important;
     }
     /* ******************************************************************************************************************************* */

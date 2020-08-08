@@ -32,7 +32,7 @@
         background-color: #696969;
     }
     /* Navbar Mobile Collapse Custom Styling */
-    .navbar-light .navbar-toggler, .navbar-toggler-icon {
+    .navbar-light .navbar-toggler {
         background-color: #0ed145;
         border-radius: 0px;
         color: #ffffff;
@@ -57,10 +57,8 @@
     /* ******************************************************************************************************************************* */
     /* Carousel Center Alignment */
     .carousel-caption {
-        position: relative;
         color: #fff;
-        right: 2rem;
-        top: 15rem;
+        top: 25rem;
         width: 75%;
     }
     /* Carousel Home Context "Professional Landscaping" Text */
@@ -99,14 +97,14 @@
     /* ******************************************************************************************************************************* */
     /* Jumbo 'About Us' Brand */
     #aboutTitle {
-        font-size: 10rem;
+        font-size: 8rem;
         position: absolute;
         text-align: center;
         z-index: 1;
-        top: 14rem;
-        color: white;
-        left: 0rem;
-        font-weight: bold;
+        top: 12rem;
+        color: #fff;
+        left: 0;
+        font-weight: 700;
         width: 100%;
     }
     /* Background Image Resize */
@@ -154,6 +152,10 @@
     /* Jumbotron Polygon Style */
     .jumbotron {
         clip-path: polygon(100% 0, 100% 100%, 59% 100%, 50% 90%, 41% 100%, 0 100%, 0 0);
+    }
+    /* Scale Background Image */
+    .services-section {
+        height: 457vh;
     }
     /* ******************************************************************************************************************************* */
     /*      --------------------------------------- CLIENT REGISTRATION STYLE --------------------------------------- */
@@ -207,7 +209,7 @@
         font-size: 8rem;
     }
     /* 'register Now' Link */
-    #registerNow {
+    #loginNow {
         font-size: 5.5rem !important;
     }
     /* ******************************************************************************************************************************* */

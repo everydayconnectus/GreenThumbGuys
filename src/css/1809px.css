@@ -1,14 +1,13 @@
 /* smartphones, iPhone, portrait 480x320 phones */
 
-@media screen and (min-width: 1309px) and (max-width: 1651px) {
+@media screen and (min-width: 1809px) and (max-width: 2523px) {
     /* ******************************************************************************************************************************* */
     /*      --------------------------------------- MOBILE RULES FOR THE NAVBAR --------------------------------------- */
     /* ******************************************************************************************************************************* */
-    /* Our Official Logo */
     #SiteLogo {
         margin-left: 20px;
         width: 30vw;
-        height: 50px;
+        height: 77px;
     }
     /* Removes nav padding and expands the logo visibility */
     nav.navbar.navbar-expand-lg.navbar-light.bg-dark {
@@ -50,29 +49,29 @@
     /* ******************************************************************************************************************************* */
     /* Carousel Center Alignment */
     .carousel-caption {
-        top: 19rem;
-        margin-left: 11rem;
-        z-index: 10;
         color: #fff;
+        top: 21rem;
+        left: 14rem;
+        width: 60%;
     }
     /* Carousel Home Context "Professional Landscaping" Text */
     #ThumbTitle {
         margin-bottom: 1rem;
-        font-size: 5rem;
+        font-size: 10rem;
     }
     /* Size of the parent id to 'ThumbTitle' */
     #ThumbContext {
-        font-size: 3.5rem;
+        font-size: 6.8rem;
     }
     /* Pushes 'View Our Services' away from 'Become a Client' */
     #btnClient {
-        margin-left: 1rem;
+        margin-left: 2rem;
     }
     /* Home Button Styles & Size Control */
     #btnCompany, #btnClient {
         padding: 0 1rem 0rem 1rem;
         border-radius: 8px;
-        font-size: 2.5rem;
+        font-size: 3.5rem;
         width: 100%;
     }
     /* Main 'Home Page' Section Definitions (VERY IMPORTANT, SITE WILL EXPLODE and CONTORT IF DELETED) */
@@ -95,15 +94,15 @@
         position: absolute;
         text-align: center;
         z-index: 1;
-        top: 14rem;
+        top: 18rem;
         color: white;
-        left: 0rem;
+        left: 1rem;
         font-weight: bold;
         width: 100%;
     }
     /* Background Image Resize */
     .services-section {
-        height: 410vh;
+        height: 430vh;
     }
     /* Parent Heading For 'Our Services' */
     h2.display-1.mt-5.text-success.font-weight-bold {
@@ -134,7 +133,7 @@
     }
     /* Service Cards Custom Width */
     .ServiceCards.w-50.mt-5 {
-        width: 19vw !important;
+        width: 36vw !important;
         display: block;
     }
     /* Background Image Resize */
@@ -144,7 +143,7 @@
     /* Jumbotron Polygon Style */
     .jumbotron {
         clip-path: polygon(100% 0, 100% 100%, 60% 100%, 50% 88%, 42% 100%, 0 100%, 0 0);
-        height: 52vh;
+        height: 50vh;
     }
     /* ******************************************************************************************************************************* */
     /*      --------------------------------------- CLIENT REGISTRATION STYLE --------------------------------------- */
@@ -152,15 +151,15 @@
     /* Keeps the register form tight and styled */
     #FormContainer {
         position: relative;
-        top: 135px !important;
+        top: 11rem!important;
         background-color: #343a40;
         border: 4px solid #0ed145;
         border-radius: 2%;
-        color: #ffffff;
-        padding: 6vw;
-        height: 79vh;
+        color: #fff;
+        padding: 4vw;
+        height: 103vh;
         margin: auto;
-        width: 93%;
+        width: 67%;
     }
     /* register Logo */
     #SiteLogoregister {
@@ -169,37 +168,26 @@
     /* 'Register Account' Text */
     h2.display-2.text-center {
         font-size: 5.4rem;
-        margin-top: 1rem;
     }
     /* Resizes the background */
     .register-section {
         background-image: Url(/images/backgrounds/register/bgregister.png);
         background-repeat: no-repeat cover;
         background-position-x: 260rem;
-        height: 159vh;
+        height: 117vh;
     }
-    /* Resizes the register Section */
-    #FormContainer {
+    /* Positions 'Already A Client?' Div */
+    .text-center.row {
         position: relative;
-        top: 110px;
-        background-color: #343a40;
-        border: 4px solid #0ed145;
-        border-radius: 2%;
-        color: #ffffff;
-        padding: 6vw;
-        height: 79vh;
-        margin: auto;
-        width: 93%;
-        height: 87%;
+        bottom: 4rem;
     }
     /* Resize 'Already A Client?' Text */
     #AlreadyClient {
-        margin-top: 8rem;
-        font-size: 6.5rem;
+        font-size: 3.5rem;
     }
     /* 'register Now' Link */
     #loginNow {
-        font-size: 5.5rem !important;
+        font-size: 3.5rem!important;
     }
     /* ******************************************************************************************************************************* */
     /*      --------------------------------------- USER LOGIN STYLE --------------------------------------- */
@@ -218,15 +206,15 @@
     /* Login Form Style */
     #LoginContainer {
         position: relative;
-        top: 20rem;
+        top: 22rem;
         background-color: #343a40;
         border: 4px solid #07e0e3;
         border-radius: 2%;
-        color: #ffffff;
+        color: #fff;
         padding: 3vw;
-        height: 65vh;
+        height: 58vh;
         margin: auto;
-        width: 50%;
+        width: 43%;
     }
     /* Input Field Style */
     .LoginField {
@@ -244,8 +232,12 @@
         color: #000000;
         font-weight: bold;
     }
+    /* 'Don't Have An Account?' Text */
+    h1.display-5 {
+        font-size: 4rem;
+    }
     /* 'Register Now' text */
     a.display-3.text-info {
-        font-size: 3.5rem;
+        font-size: 4.5rem;
     }
 }
