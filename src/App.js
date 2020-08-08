@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-d
 
 // Stylesheet Definitions.
 import './App.css'; // Global CSS Site Styling.
+import './css/client.css'; // Prelim CSS. (Will be changed at some point)
 
 // Media Breakpoints.
 import './css/320px.css';

@@ -2,24 +2,25 @@ import React, { Component } from "react";
 // import { getClientById } from "../utilities/async";
 
 // import { jsonToDateString } from "../utilities/general";
-import { Button, ButtonGroup } from 'reactstrap';
+import { Button, ButtonGroup, Form, FormGroup, Label, Input } from 'reactstrap';
 import axios from "axios";
+import { data } from "jquery";
 
 
 
 class Client extends Component {
 
-  constructor() {
-    super();
-    this.state = {
-      clients: []
+//  constructor() {
+//    super();
+//    this.state = {
+//      clients: []
+//    }
+//  }
+
+
+  state = {
+    client: {}
     }
-  }
-
-
-  // state = {
-  //   client: {}
-  //   }
 
 
 
@@ -42,7 +43,7 @@ class Client extends Component {
     // .then(res => res.json())
     // .then(clients => this.setState({ clients }, () => console.log("Clients Fetched..", clients)));
 
-    this.getClient("5f1b0f8701577705dcd205ca");
+    this.getClient("5f2ee5c32704b2537495e6af");
   }
 
 
@@ -98,35 +99,51 @@ class Client extends Component {
 
   render() {
 
-    // const { client } = this.state;
+    const { client } = this.state;
 
     //  const id = this.props.match.params.id;
 
     // const { client } = this.state;
 
+    return(
+      <div className = "clientWrapper">
 
-    return (
-      <div className="clientWrapper">
 
+          <div className = "dashBanner"> 
+              <p>Welcome to your Dashboard {client.firstName + " " + client.lastName}</p>
+              <Button color="primary" className="hvr-grow display-1" id="btnCompany">Update Contact Info</Button>
+              <Button color="secondary" className="hvr-grow display-1" id="btnCompany">Update Bundle Choice</Button>
+              <Button color="warning" className= "hvr-grow display-1" id="btnCompany">Change Password</Button><div className = "dashUpdates"></div>
+          </div>
 
-        <div className="dashBanner"> <p id="ban"></p>
-          {/* <p>Welcome to your Dashboard {client.firstName + " " + client.lastName}</p> */}
-          <div className="dashUpdates"><Button color="primary" className="hvr-grow display-1" id="btnCompany">update contact info</Button>
-            <Button color="secondary" className="hvr-grow display-1" id="btnCompany">update Bundle Choice</Button></div>
-        </div>
-
-        <div className="dashStats">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab eos quibusdam iste magni omnis culpa voluptatum, quia dolore iure tempora dignissimos possimus earum doloremque expedita neque aut esse vel repellendus!
-        Facilis incidunt libero fugiat eius? Excepturi, voluptate at eaque praesentium ullam rem quod unde quaerat consequatur impedit expedita maiores perspiciatis assumenda sunt quia error? Dicta aperiam minus magnam fugiat quibusdam.
-        Nulla quod adipisci doloribus eos aspernatur, quasi quae facere mollitia aliquid. Assumenda nihil a, inventore corporis labore accusantium architecto similique dicta, nobis sed harum repellendus culpa! Similique, quae veniam? Cum!
-        Quis aperiam eius fugiat delectus accusantium modi quidem rerum tempora aut. Rerum neque, libero, tempore omnis quod necessitatibus facilis adipisci corporis aliquam sunt incidunt dolores quae hic corrupti quis ea.
-        Adipisci itaque cum nisi ipsam praesentium, eius ducimus nostrum rem ad animi sint sequi quibusdam nulla repellendus illum labore accusantium dolor mollitia perspiciatis harum qui. Officiis eum nihil laborum quam.
-        Atque aut aspernatur, perferendis qui ullam a quod mollitia, magnam sed accusantium inventore reiciendis accusamus commodi at non vel tenetur officiis? Quasi, doloribus omnis. Tempore, non. Numquam repellendus hic sint?
-        Nesciunt, doloribus adipisci. Non harum obcaecati, a doloribus totam necessitatibus nobis corrupti possimus veritatis animi iste repudiandae accusantium eligendi aliquam dolore voluptas expedita illum ullam, nisi quisquam sed? Ducimus, asperiores?
-        Impedit sapiente similique odio. Dolorum ducimus, magnam eveniet nihil, nostrum atque possimus repudiandae iste deleniti maxime tempora beatae! Sapiente, vero ratione consequuntur eaque quos dignissimos rem quae quisquam ipsam. A.
-        Fugiat commodi consequuntur qui voluptatum, quasi incidunt distinctio corporis dolor maxime obcaecati vero suscipit enim? Laboriosam, maiores autem eaque facilis cumque cum unde optio temporibus fuga modi rerum officia tempora.
-            Vel amet ullam ipsam deserunt quae aliquid quos similique culpa quod dolores distinctio nostrum corporis nisi excepturi, numquam ratione fugit rem reprehenderit sapiente ipsum nesciunt eum inventore! Eaque, ipsa nesciunt.</div>
-        <div className="techCorner"></div>
-        <div className="dashFeedback"></div>
+        <div className = "dashStats"><h1>Your Profile:</h1>
+            <ul>
+              <li>Client Since: {client.dateAdded}</li>
+              <li>Subscription: {client.bundle}</li>
+              <li>Email: {client.email}</li>
+              <li>Address Served: {client.address + " " + client.city + ", " + client.state + " " + client.zipcode}</li>
+              <li>City: {client.city}</li>
+              <li>State: {client.state}</li>
+              <li>Last Service Date: </li>
+              <li>Work Completed: </li>
+              <li>Next Service Date:</li>
+              <li>Upcoming Work: </li>
+              <li></li>
+            </ul>
+            
+            </div>
+            
+            <div className = "dashFeedback"><h1>Feedback:</h1><h3> {client.firstName + ", "}tell us how we are doing or request a specific need for your next service </h3>
+            <Form method="post" action="mailto:lcole.engr@gmail.com">
+              <FormGroup>
+   
+                <h1><Input type = "textarea" name="text" id = "feedback" bsSize="lg"/></h1>
+              </FormGroup>
+            <Button>Submit Feedback</Button>
+            </Form>
+            </div>
+            <div className = "techCorner"><h1>Technician Notes: </h1></div>
+            
 
       </div>
     )
