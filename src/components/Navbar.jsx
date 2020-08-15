@@ -37,7 +37,7 @@ class Navbar extends Component {
               <Link className="nav-link text-white text-uppercase mx-5" to="/register"><i className="fas fa-user-plus"></i> Register</Link>
             </li>
             <li className="nav-item hvr-shrink">
-              <Link className="nav-link text-white text-uppercase mx-5" to="/client"><i className="fas fa-user-plus"></i> <span id="ClientName">...</span></Link>
+              <Link className="nav-link text-white text-uppercase mx-5" to="/client"><i className="fas fa-user-plus"></i> <span id="ClientName">Service Details</span></Link>
             </li>
           </ul>
         </div>

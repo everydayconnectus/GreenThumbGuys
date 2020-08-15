@@ -14,7 +14,8 @@ const initialFormData = Object.freeze({
   city: "",
   state: "",
   zipcode: "",
-  bundle: ""
+  bundle: "Plan Not Chosen",
+  pic: "https://puri.sm/wp-content/uploads/2018/01/male-placeholder.jpg"
 });
 
 // Listen to Form Inputs For Data.
@@ -134,7 +135,7 @@ const Register = () => {
             <option className="DataField">Basic Service Bundle (Full Year)</option>
             <option className="DataField">Basic Service Bundle (Seasonal)</option>
             <option className="DataField">Green Thumb Bundle (Full Year)</option>
-            <option className="DataField">Green Thumb BundleI (Seasonal)</option>
+            <option className="DataField">Green Thumb Bundle (Seasonal)</option>
             <option className="DataField">Premium Bundle (Full Year)</option>
             <option className="DataField">Premium Bundle (Seasonal)</option>
             <option className="DataField">Commercial Bundle</option>
