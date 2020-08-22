@@ -1,6 +1,6 @@
 // Dependencies.
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 // Draw Component Class.
 class Navbar extends Component {
@@ -24,20 +24,20 @@ class Navbar extends Component {
 
             {/* Home Link */}
             <li className="nav-item hvr-shrink active">
-              <Link className="nav-link text-white text-uppercase mx-5" to="/" ><i className="fas fa-home"></i> Home <span className="sr-only">(current)</span></Link>
+              <NavLink exact activeClassName="main-nav-active" className="nav-link text-white text-uppercase mx-5" to="/" ><i className="fas fa-home"></i> Home</NavLink>
             </li>
 
             {/* About / Services Link */}
             <li className="nav-item hvr-shrink">
-              <Link className="nav-link text-white text-uppercase mx-5" to="/services"><i className="fas fa-info-circle"></i> Our Services</Link>
+              <NavLink exact activeClassName="main-nav-active" className="nav-link text-white text-uppercase mx-5" to="/services"><i className="fas fa-info-circle"></i> Our Services</NavLink>
             </li>
 
             {/* Register Link */}
             <li className="nav-item hvr-shrink">
-              <Link className="nav-link text-white text-uppercase mx-5" to="/register"><i className="fas fa-user-plus"></i> Register</Link>
+              <NavLink exact activeClassName="main-nav-active" className="nav-link text-white text-uppercase mx-5" to="/register"><i className="fas fa-user-plus"></i> Register</NavLink>
             </li>
             <li className="nav-item hvr-shrink">
-              <Link className="nav-link text-white text-uppercase mx-5" to="/client"><i className="fas fa-user-plus"></i> <span id="ClientName">Service Details</span></Link>
+              <NavLink exact  activeClassName="main-nav-active" className="nav-link text-white text-uppercase mx-5" to="/client-profile"><i className="fas fa-user-plus"></i> <span id="ClientName">Client Profile</span></NavLink>
             </li>
           </ul>
         </div>

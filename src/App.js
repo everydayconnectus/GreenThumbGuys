@@ -25,15 +25,17 @@ import Home from './components/Home';
 import Services from './components/Services';
 import Register from './components/Register';
 import Login from './components/Login';
-import Client from './components/Client';
+import ClientProfile from './components/ClientProfile';
+import EditProfile from './components/EditProfile';
+import Feedback from './components/Feedback';
 
 // Draw Component Class.
 
 const mockAuth = {
-  isAuthenticated: false,    // isauthenticated needs to be changed to true here for access to page
+  isAuthenticated: false, // isauthenticated needs to be changed to true here for access to page
   authenticate(cb) {
     this.isAuthenticated = true
-    setTimeout(cb, 100)  //fake async
+    setTimeout(cb, 100)  // "async" lol; (Temp).
   },
   logout(cb) {
     this.isAuthenticated = false
@@ -65,24 +67,24 @@ class App extends Component {
   }
 
   render() {
-
-    const { redirectToReferrer } = this.state
-    if (redirectToReferrer === true) {
-      return (
-        <Redirect to="/client" />
-      )
-    }
     return (
       <Router>
         <div>
+          {/* Navbar is Always Rendered */}
           <Navbar />
+
+          {/* This Switch Contains Routes the Navbar Links to, they are conditionally rendered */}
           <Switch>
+            {/* This is the 'Home' Root Route */}
             <Route path="/" exact component={Home} />
+
+            {/* Possible Route Paths (Global Site Routes) */}
             <Route path="/services" component={Services} />
             <Route path="/register" component={Register} />
             <Route path="/login" component={Login} />
-            <Route path="/client" component={Client} />
-
+            <Route path="/client-profile" component={ClientProfile} />
+            <Route path="/edit-profile" component={EditProfile} />
+            <Route path="/feedback" component={Feedback} />
           </Switch>
         </div>
       </Router>
