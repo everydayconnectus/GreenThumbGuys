@@ -1,311 +1,58 @@
-/* smartphones, iPhone, portrait 480x320 phones */
-
 @media screen and (min-width: 964px) and (max-width: 1025px) {
     /* ******************************************************************************************************************************* */
-    /*      --------------------------------------- MOBILE RULES FOR THE NAVBAR --------------------------------------- */
+    /*      --------------------------------------- NAVBAR STYLING --------------------------------------- */
     /* ******************************************************************************************************************************* */
-    /* Our Official Logo */
-    #SiteLogo {
-        margin-left: 10%;
-        width: 80rem;
-        height: 72px;
-    }
-    /* Removes nav padding and expands the logo visibility */
-    nav.navbar.navbar-expand-lg.navbar-light.bg-dark {
-        display: flex;
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
         width: 100%;
-        height: 19vh;
+        padding: 0;
+        margin: 0;
+    }
+    img.Logo {
+        width: 100%;
+        padding: 1rem;
+    }
+    .navbar-dark .navbar-toggler {
+        background-color: #0ed145;
+        width: 100%;
+        color: #ffffff;
+        font-size: 2rem;
+    }
+    .navbar-nav {
+        font-size: 3rem;
+        text-align: center;
+        width: 100vw;
         padding: 0;
     }
-    /* Keeps Navbar from disappearing due to being in a fixed position */
-    .navbar {
-        z-index: 999;
-        width: 100%;
-    }
-    /* Resizes Navbar Links */
-    .nav-item {
-        font-size: 1.8rem;
-    }
-    /* Creates a nice new background for the collapse dropdown only in mobile */
-    ul.navbar-nav.ml-auto {
-        background-color: #343a40;
-        border-bottom: 4px solid #0ed145;
-        text-align: center;
-    }
-    /* Keeps the navbar 100% expanded across the screen */
-    #nav-banner {
-        width: 100%;
-    }
-    /* Navbar Collapse Toggler */
-    .navbar-light .navbar-toggler {
-        border-radius: 0;
-        top: 0.3rem;
-        color: #fff;
-        width: 100%;
+    a.NavLink.active {
         background-color: #0ed145;
-        position: relative;
-    }
-    /* Navbar Collapse Reposition */
-    .navbar-collapse {
-        flex-basis: 100%;
-        flex-grow: 1;
-        align-items: center;
-        position: relative;
-        bottom: 6px;
     }
     /* ******************************************************************************************************************************* */
-    /*      --------------------------------------- MOBILE RULES FOR THE CAROUSEL --------------------------------------- */
+    /*      --------------------------------------- HOME STYLING --------------------------------------- */
     /* ******************************************************************************************************************************* */
-    /* Carousel Center Alignment */
-    .carousel-caption {
-        color: #fff;
-        left: 14rem;
-        top: 10rem;
-        width: 75%;
-    }
-    /* Carousel Home Context "Professional Landscaping" Text */
-    #ThumbTitle {
-        margin-bottom: 1rem;
-        font-size: 6rem;
-    }
-    /* Size of the parent id to 'ThumbTitle' */
-    #ThumbContext {
-        font-size: 3.8rem;
-    }
-    /* Pushes 'View Our Services' away from 'Become a Client' */
-    #btnClient {
-        margin-left: 1rem;
-    }
-    /* Home Button Styles & Size Control */
-    #btnCompany, #btnClient {
-        padding: 0 1rem 0rem 1rem;
-        border-radius: 8px;
-        font-size: 3rem;
-        width: 100%;
-    }
-    /* Main 'Home Page' Section Definitions (VERY IMPORTANT, SITE WILL EXPLODE and CONTORT IF DELETED) */
-    .home-section {
+    body {
+        background: url('/images/backgrounds/stockslides/stock1.jpg');
         background-repeat: no-repeat;
-        position: fixed;
-        display: flex;
-        width: 100%;
-    }
-    /* Adjusts the Carousel Background Brightness Intensity (So text is more visible on images that contain brighter colors) */
-    .carousel-item {
-        filter: brightness(40%);
-    }
-    /* ******************************************************************************************************************************* */
-    /*      --------------------------------------- MOBILE RULES FOR THE SERVICES --------------------------------------- */
-    /* ******************************************************************************************************************************* */
-    /* Jumbo 'About Us' Brand */
-    #aboutTitle {
-        font-size: 10rem;
-        position: absolute;
-        text-align: center;
-        z-index: 1;
-        top: 18rem;
-        color: #fff;
-        left: 0;
-        font-weight: 700;
-        width: 100%;
-    }
-    /* Background Image Resize */
-    .services-section {
-        height: 365vh;
-    }
-    /* Parent Heading For 'Our Services' */
-    h2.display-1.mt-5.text-success.font-weight-bold {
-        font-size: 4.1rem;
-    }
-    /* 'Our Services' Child Paragraph (About Our Services) */
-    #ServiceContext {
-        font-size: 1.8rem;
-        margin: auto;
-        width: 100%;
-    }
-    /* Parent Label 'Premium Service Bundles' */
-    h2.display-2.mt-5.text-success {
-        font-size: 2.3rem;
-    }
-    /* Service Card Container */
-    .ServiceCards {
-        position: relative;
-        margin-top: 100rem;
-        left: 5rem;
-    }
-    /* Service Card Resize */
-    .card {
-        position: relative;
-        display: flex;
-        width: 194%;
-        flex-direction: column;
-        border: 1px solid #ffffff;
-        border-radius: .25rem;
-    }
-    /* Service Cards Custom Width */
-    .ServiceCards.w-50.mt-5 {
-        width: 39vw !important;
-        display: block;
-    }
-    /* Background Image Resize */
-    .about-section {
-        height: 100%;
-    }
-    /* Jumbotron Polygon Style */
-    .jumbotron {
-        clip-path: polygon(100% 0, 100% 100%, 59% 100%, 50% 90%, 41% 100%, 0 100%, 0 0);
-    }
-    /* Scale Background Image */
-    .services-section {
-        height: 557vh;
-    }
-    /* ******************************************************************************************************************************* */
-    /*      --------------------------------------- CLIENT REGISTRATION STYLE --------------------------------------- */
-    /* ******************************************************************************************************************************* */
-    /* Keeps the register form tight and styled */
-    #FormContainer {
-        position: relative;
-        top: 135px !important;
-        background-color: #343a40;
-        border: 4px solid #0ed145;
-        border-radius: 2%;
+        background-size: cover;
+        height: 100vh;
         color: #ffffff;
-        padding: 6vw;
-        height: 79vh;
-        margin: auto;
-        width: 93%;
     }
-    /* register Logo */
-    #SiteLogoregister {
-        display: none;
-    }
-    /* 'Register Account' Text */
-    h2.display-2.text-center {
-        font-size: 5.4rem;
-        margin-top: 1rem;
-    }
-    /* Resizes the background */
-    .register-section {
-        background-image: Url(/images/backgrounds/register/bgregister.png);
-        background-repeat: no-repeat cover;
-        background-position-x: 260rem;
-        height: 159vh;
-    }
-    /* Resizes the register Section */
-    #FormContainer {
+    #HomeBrand {
         position: relative;
-        top: 110px;
-        background-color: #343a40;
-        border: 4px solid #0ed145;
-        border-radius: 2%;
-        color: #ffffff;
-        padding: 6vw;
-        height: 79vh;
-        margin: auto;
-        width: 93%;
-        height: 87%;
+        top: 8rem;
     }
-    /* Resize 'Already A Client?' Text */
-    #AlreadyClient {
-        margin-top: 8rem;
-        font-size: 6.5rem;
+    #BrandContext {
+        font-size: 3rem;
+        width: 42vw;
     }
-    /* 'register Now' Link */
-    #loginNow {
-        font-size: 5.5rem !important;
+    #BrandHeading {
+        font-size: 4rem;
     }
-    /* ******************************************************************************************************************************* */
-    /*      --------------------------------------- USER LOGIN STYLE --------------------------------------- */
-    /* ******************************************************************************************************************************* */
-    /* Login Section style and background */
-    .login-section {
-        background-image: Url(/images/backgrounds/register/bgregister.png);
-        background-repeat: no-repeat cover;
-        background-position-x: 360rem;
-        height: 100vh
-    }
-    /* Login Logo Heading */
-    #login-banner {
-        display: none;
-    }
-    /* Login Form Style */
-    #LoginContainer {
-        position: relative;
-        top: 20rem;
-        background-color: #343a40;
-        border: 4px solid #07e0e3;
-        border-radius: 2%;
-        color: #ffffff;
-        padding: 3vw;
-        height: 65vh;
-        margin: auto;
-        width: 90%;
-    }
-    /* Input Field Style */
-    .LoginField {
-        background-color: #16d3d5 !important;
-        border: none !important;
-        color: #ffffff !important;
-    }
-    /* Login Button */
-    #btnLogin {
-        padding: 1rem 4rem 1rem 4rem;
-        background-color: #07e0e3;
+    .btnServices {
         font-size: 2rem;
-        margin-top: 2rem;
-        border-radius: 10px;
-        color: #000000;
-        font-weight: bold;
+        width: 20rem;
     }
-    /* 'Register Now' text */
-    a.display-3.text-info {
-        font-size: 3.5rem;
-    }
-    /* ******************************************************************************************************************************* */
-    /*      --------------------------------------- USER LOGIN STYLE --------------------------------------- */
-    /* ******************************************************************************************************************************* */
-    /* Login Section style and background */
-    .login-section {
-        background-image: Url(/images/backgrounds/register/bgregister.png);
-        background-repeat: no-repeat cover;
-        background-position-x: 360rem;
-        height: 100vh
-    }
-    /* Login Logo Heading */
-    #login-banner {
-        display: none;
-    }
-    /* Login Form Style */
-    #LoginContainer {
-        position: relative;
-        top: 20rem;
-        background-color: #343a40;
-        border: 4px solid #07e0e3;
-        border-radius: 2%;
-        color: #ffffff;
-        padding: 3vw;
-        height: 65vh;
-        margin: auto;
-        width: 90%;
-    }
-    /* Input Field Style */
-    .LoginField {
-        background-color: #16d3d5 !important;
-        border: none !important;
-        color: #ffffff !important;
-    }
-    /* Login Button */
-    #btnLogin {
-        padding: 1rem 4rem 1rem 4rem;
-        background-color: #07e0e3;
+    .btnClient {
         font-size: 2rem;
-        margin-top: 2rem;
-        border-radius: 10px;
-        color: #000000;
-        font-weight: bold;
-    }
-    /* 'Register Now' text */
-    a.display-3.text-info {
-        font-size: 3.5rem;
+        width: 20rem;
     }
 }
