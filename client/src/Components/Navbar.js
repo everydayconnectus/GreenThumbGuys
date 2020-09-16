@@ -24,6 +24,11 @@ const Navbar = props => {
                         <i className="fa fa-home" aria-hidden="true"></i> Home
                     </li>
                 </NavLink>
+                <NavLink to="/services" exact={true} className="NavLink" activeClassName="active">
+                    <li className="nav-item nav-link hvr-grow">
+                        <i class="fa fa-info-circle" aria-hidden="true"></i> Services
+                    </li>
+                </NavLink>
                 <NavLink to="/register" exact={true} className="NavLink" activeClassName="active">
                     <li className="nav-item nav-link hvr-grow">
                         <i className="fa fa-user-plus" aria-hidden="true"></i> Register
@@ -44,6 +49,11 @@ const Navbar = props => {
                 <NavLink to="/" exact={true} className="NavLink" activeClassName="active">
                     <li className="nav-item nav-link hvr-grow">
                         <i className="fa fa-home" aria-hidden="true"></i> Home
+                    </li>
+                </NavLink>
+                <NavLink to="/services" exact={true} className="NavLink" activeClassName="active">
+                    <li className="nav-item nav-link hvr-grow">
+                        <i class="fa fa-info-circle" aria-hidden="true"></i> Services
                     </li>
                 </NavLink>
                 {

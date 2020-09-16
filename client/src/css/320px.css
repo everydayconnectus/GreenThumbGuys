@@ -3,7 +3,7 @@
     /*      --------------------------------------- NAVBAR STYLING --------------------------------------- */
     /* ******************************************************************************************************************************* */
     nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
-        width: 65%;
+        width: 102vw;
         padding: 0;
         margin: 0;
     }
@@ -13,7 +13,7 @@
     .navbar-nav {
         font-size: 2rem;
         text-align: center;
-        width: 65vw;
+        width: 102vw;
         padding: 0;
     }
     a.NavLink.active {
@@ -26,28 +26,31 @@
         background: url('/images/backgrounds/stockslides/stock1.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        height:100vh;
+        height: 102vh;
         color: #ffffff;
     }
     #HomeBrand {
         position: relative;
-        right: 6rem;
-        width: 23rem;
+        right: 0.5rem;
+        width: 33rem;
         top: 3rem;
         text-align: center;
     }
     #BrandContext {
-        font-size: 1.4rem;
+        font-size: 2.4rem;
     }
     #BrandHeading {
-        font-size: 1.8rem;
+        font-size: 2.8rem;
     }
     .btnServices {
-        font-size: 1rem;
-        width: 10rem;
+        font-size: 1.5rem;
+        width: 14rem;
     }
     .btnClient {
-        font-size: 1rem;
-        width: 10rem;
+        font-size: 1.5rem;
+        width: 14rem;
     }
+    /* ******************************************************************************************************************************* */
+    /*      --------------------------------------- REGISTER STYLING --------------------------------------- */
+    /* ******************************************************************************************************************************* */
 }

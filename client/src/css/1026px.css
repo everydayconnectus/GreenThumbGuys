@@ -1,3 +1,33 @@
 @media screen and (min-width: 1026px) and (max-width: 1308px) {
-
+    /* ******************************************************************************************************************************* */
+    /*      --------------------------------------- HOME STYLING --------------------------------------- */
+    /* ******************************************************************************************************************************* */
+    body {
+        background: url('/images/backgrounds/stockslides/stock1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 102vh;
+        color: #ffffff;
+    }
+    #HomeBrand {
+        position: relative;
+        right: 0.5rem;
+        width: 63rem;
+        top: 1rem;
+        text-align: center;
+    }
+    #BrandContext {
+        font-size: 3.9rem;
+    }
+    #BrandHeading {
+        font-size: 4.8rem;
+    }
+    .btnServices {
+        font-size: 2rem;
+        width: 24rem;
+    }
+    .btnClient {
+        font-size: 2rem;
+        width: 24rem;
+    }
 }

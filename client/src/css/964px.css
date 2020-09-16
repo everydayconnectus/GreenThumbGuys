@@ -33,26 +33,28 @@
         background: url('/images/backgrounds/stockslides/stock1.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        height: 100vh;
+        height: 102vh;
         color: #ffffff;
     }
     #HomeBrand {
         position: relative;
-        top: 8rem;
+        right: 0.5rem;
+        width: 63rem;
+        top: 1rem;
+        text-align: center;
     }
     #BrandContext {
-        font-size: 3rem;
-        width: 42vw;
+        font-size: 3.9rem;
     }
     #BrandHeading {
-        font-size: 4rem;
+        font-size: 4.8rem;
     }
     .btnServices {
         font-size: 2rem;
-        width: 20rem;
+        width: 24rem;
     }
     .btnClient {
         font-size: 2rem;
-        width: 20rem;
+        width: 24rem;
     }
 }

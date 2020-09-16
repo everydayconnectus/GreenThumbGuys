@@ -13,7 +13,7 @@
     }
     .navbar-dark .navbar-toggler {
         background-color: #0ed145;
-        width: 100%;
+        width: 100%;    
         color: #ffffff;
         font-size: 2rem;
     }
@@ -33,29 +33,28 @@
         background: url('/images/backgrounds/stockslides/stock1.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        height: 100vh;
+        height: 102vh;
         color: #ffffff;
     }
     #HomeBrand {
         position: relative;
-        right: 6rem;
-        width: 111vw;
+        right: 0.5rem;
+        width: 33rem;
         top: 3rem;
         text-align: center;
     }
     #BrandContext {
-        font-size: 3rem;
-        width: 82vw;
+        font-size: 2.4rem;
     }
     #BrandHeading {
-        font-size: 6.8rem;
+        font-size: 2.8rem;
     }
     .btnServices {
-        font-size: 2rem;
-        width: 20rem;
+        font-size: 1.5rem;
+        width: 14rem;
     }
     .btnClient {
-        font-size: 2rem;
-        width: 20rem;
+        font-size: 1.5rem;
+        width: 14rem;
     }
 }
